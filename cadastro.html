@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="imagens/logo.png" type="image/x-icon">
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <a href="inicial.html">
+        <img text-align="center" src="imagens/logo.png" alt="Logo da WeekDiet" loading="lazy">
+      </a>
+      <h2>WeekDiet</h2>
+    </div>
+    <nav>
+      <a href="funciona.html">Como funciona</a>
+      <a href="feedbacks.html">Feedbacks</a>
+      <a href="sobre.html">Sobre nós</a>
+      <a href="Login.html">Entrar</a>
+    </nav loading="lazy">
+  </header>
+
+  <main style="justify-content: center;">
+
+    <form style="text-align: center;">
+      <div class="step active" id="step-1">
+        <h1 style="color: #2e7d32; margin-bottom: 20px;">Selecione seu sexo</h1>
+        <div class="options">
+          <div class="option" onclick="nextStep(1, 'Masculino')">
+            <img src="imagens/homem.png" alt="Masculino">
+            <strong>Masculino</strong>
+          </div>
+          <div class="option" onclick="nextStep(1, 'Feminino')">
+            <img src="imagens/mulher.png" alt="Feminino">
+            <strong>Feminino</strong>
+          </div>
+        </div>
+      </div>
+
+      <div class="step" id="step-2">
+        <h1 style="color: #2e7d32; margin-bottom: 20px;">Selecione seu biotipo</h1>
+        <div class="options">
+          <div class="option" onclick="nextStep(2, 'Ectomorfo')">
+            <img src="imagens/ectomorfo.png" alt="Ectomorfo">
+            <strong>Ectomorfo</strong>
+            <span>Estrutura corporal magra</span>
+          </div>
+          <div class="option" onclick="nextStep(2, 'Mesomorfo')">
+            <img src="imagens/Mesomorfo.png" alt="Mesomorfo">
+            <strong>Mesomorfo</strong>
+            <span>Corpo naturalmente atlético</span>
+          </div>
+          <div class="option" onclick="nextStep(2, 'Endomorfo')">
+            <img src="imagens/endomorfo.png" alt="Endomorfo">
+            <strong>Endomorfo</strong>
+            <span>Maior tendência a acumular gordura</span>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="step" id="step-3">
+        <h1 style="color: #2e7d32; margin-bottom: 20px;">Qual seu objetivo?</h1>
+        <div class="options">
+          <div class="option" onclick="nextStep(3, 'Emagrecer')">
+            <img src="imagens/emagrecer.png" alt="Emagrecer">
+            <strong>Emagrecer</strong>
+            <span>Reduzir calorias e queimar gordura</span>
+          </div>
+          <div class="option" onclick="nextStep(3, 'Massa muscular')">
+            <img src="imagens/ganhar.png" alt="Massa">
+            <strong>Ganho de massa muscular</strong>
+            <span>Aumentar calorias e proteínas</span>
+          </div>
+          <div class="option" onclick="nextStep(3, 'Saúde')">
+            <img src="imagens/saudavel.png" alt="Saúde">
+            <strong>Melhorar saúde e manter o peso</strong>
+            <span>Aprimorar o bem-estar geral</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="step" id="step-4">
+        <h1 style="color: #2e7d32; margin-bottom: 20px;">Quais carboidratos você consome?</h1>
+        <div class="grid-carbs">
+          <label><input type="checkbox" name="carboidratos" value="Arroz">
+            <img src="imagens/carboidratos/arroz.png" alt="Arroz" loading="lazy"> Arroz
+          </label>
+          <label><input type="checkbox" name="carboidratos" value="Arroz integral">
+            <img src="imagens/carboidratos/arroz integral.png" alt="Arroz integral" loading="lazy"> Arroz integral
+          </label>
+          <label><input type="checkbox" name="carboidratos" value="Feijão">
+            <img src="imagens/carboidratos/feijão.png" alt="Feijão" loading="lazy"> Feijão
+          </label>
+          <label><input type="checkbox" name="carboidratos" value="Aveia">
+            <img src="imagens/carboidratos/aveia.png" alt="Aveia" loading="lazy"> Aveia
+          </label>
+          <label><input type="checkbox" name="carboidratos" value="Cuscuz">
+            <img src="imagens/carboidratos/cuscuz.png" alt="Cuscuz" loading="lazy"> Cuscuz
+          </label>
+          <label><input type="checkbox" name="carboidratos" value="Tapioca">
+            <img src="imagens/carboidratos/tapioca.png" alt="Tapioca" loading="lazy"> Tapioca
+          </label>
+          <label><input type="checkbox" name="carboidratos" value="Batata Inglesa">
+            <img src="imagens/carboidratos/batata inglesa.png" alt="Batata Inglesa" loading="lazy"> Batata Inglesa
+          </label>
+          <label><input type="checkbox" name="carboidratos" value="Macarrão">
+            <img src="imagens/carboidratos/macarrão.png" alt="Macarrão" loading="lazy"> Macarrão
+          </label>
+          <label><input type="checkbox" name="carboidratos" value="Polenta">
+            <img src="imagens/carboidratos/polenta.png" alt="Polenta" loading="lazy"> Polenta
+          </label>
+          <label><input type="checkbox" name="carboidratos" value="Pães">
+            <img src="imagens/carboidratos/paes.png" alt="Pães" loading="lazy"> Pães
+          </label>
+          <label><input type="checkbox" name="carboidratos" value="Inhame">
+            <img src="imagens/carboidratos/inhame.png" alt="Inhame" loading="lazy"> Inhame
+          </label>
+          <label><input type="checkbox" name="carboidratos" value="Batata Doce">
+            <img src="imagens/carboidratos/batata doce.png" alt="Batata Doce" loading="lazy"> Batata Doce
+          </label>
+          <label><input type="checkbox" name="carboidratos" value="Lentilha">
+            <img src="imagens/carboidratos/lentilha.png" alt="Lentilha" loading="lazy"> Lentilha
+          </label>
+          <label><input type="checkbox" name="carboidratos" value="Grão-de-bico">
+            <img src="imagens/carboidratos/grão de bico.png" alt="Grão-de-bico" loading="lazy"> Grão-de-bico
+          </label>
+          <label><input type="checkbox" name="carboidratos" value="Milho">
+            <img src="imagens/carboidratos/Milho.png" alt="Milho" loading="lazy"> Milho
+          </label>
+        </div>
+        <div class="buttons">
+          <button type="button" class="next-btn" onclick="nextStep(4, getSelectedCarbs())">Continuar ▶</button>
+        </div>
+      </div>
+
+
+
+      <div class="nav-buttons">
+        <button type="button" onclick="prevStep()">◀ Voltar</button>
+      </div>
+
+
+    </form>
+
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 WeekDiet. Todos os direitos reservados.</p>
+  </footer>
+
+</body>
+
+</html>

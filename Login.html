@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      display: flex;
+      height: 100vh;
+    }
+
+    .left {
+      flex: 1;
+      background: #D8F4C3;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .left h1 {
+      color: #238823;
+      font-size: 50px;
+      margin-bottom: 20px;
+    }
+
+    .left img {
+      max-width: 600px;
+      margin-top: 20px;
+    }
+
+    .right {
+      flex: 1;
+      background: #F7FAF6;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 50px;
+      margin-bottom: 20px;
+    }
+
+    .logo img {
+      height: 100px;
+    }
+
+    .logo h2 {
+      font-size: 28px;
+      color: #2F6832;
+    }
+
+    .login-box {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      width: 300px;
+    }
+
+    .login-box input[type="email"],
+    .login-box input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .login-box label {
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+    }
+
+    .login-box button {
+      width: 100%;
+      padding: 10px;
+      background: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      margin-top: 15px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .login-box .footer {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 15px;
+      font-size: 14px;
+    }
+
+    .login-box .footer a {
+      text-decoration: none;
+      color: #2F6832;
+      font-weight: bold;
+    }
+
+    
+  </style>
+<link rel="icon" href="imagens/logo.png" type="image/x-icon">
+</head>
+<body>
+
+  <div class="left">
+    <h1>Continue sua jornada saudável com a WeekDiet!</h1>
+    <img src="imagens/img-login.PNG" alt="login"/>
+  </div>
+
+  <div class="right">
+    <div class="logo">
+      <a href="inicial.html">
+        <img src="imagens/logo.png" alt="Logo">
+      </a>
+    </div>
+    <div class="logo">
+      <h2>WeekDiet</h2>
+    </div>
+    
+
+
+    <div class="login-box">
+      <form>
+        <input type="email" placeholder="Email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Digite um email válido">
+        <input type="password" placeholder="Senha" required minlength="6" title="A senha deve ter pelo menos 6 caracteres">
+        <label>
+          <input type="checkbox" />
+          Manter-me conectado
+        </label>
+        <button type="submit">Entrar</button>
+        <div class="footer">
+          <a href="senha.html">Esqueceu a senha?</a>
+          <a href="cadastro.html">Cadastrar-se</a>
+        </div>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>
