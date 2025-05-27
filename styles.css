@@ -1,51 +1,45 @@
-/* Define o box-sizing para incluir bordas e padding no tamanho total dos elementos */
 * {
-    box-sizing: border-box;
-    font-family: 'Segoe UI', sans-serif; /* Define a fonte padrão */
+    box-sizing: border-box; /* Inclui borda e padding no tamanho total */
+    font-family: 'Segoe UI', sans-serif; /* Fonte padrão */
     margin: 0; /* Remove margens padrão */
     padding: 0; /* Remove padding padrão */
 }
 
-/* Estilo geral do corpo */
 body {
     background: #ffffff; /* Cor de fundo branca */
     color: #333; /* Cor do texto */
     display: flex; /* Usa Flexbox para organizar os elementos */
     flex-direction: column; /* Organiza os elementos em coluna */
-    min-height: 100vh; /* Garante que o corpo ocupe toda a altura da tela */
-    margin: 0; /* Remove margens padrão */
+    min-height: 100vh; /* Garante altura mínima da tela */
 }
 
-/* Estilo principal do conteúdo */
 main {
-    flex: 1; /* Faz o main ocupar o espaço restante */
+    flex: 1; /* Ocupa o espaço restante */
     display: flex; /* Usa Flexbox */
     flex-direction: row; /* Organiza os elementos em linha */
-    align-items: center; /* Centraliza verticalmente os itens */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
 }
 
-/* Estilo do cabeçalho */
 header {
     display: flex; /* Usa Flexbox */
     justify-content: space-between; /* Espaça os itens horizontalmente */
-    align-items: center; /* Centraliza verticalmente os itens */
+    align-items: center; /* Centraliza verticalmente */
     padding: 10px 40px; /* Espaçamento interno */
-    background: #f2f2f2; /* Cor de fundo do cabeçalho */
+    background: #f2f2f2; /* Cor de fundo */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Sombra leve */
 }
 
-/* Estilo do rodapé */
 footer {
     text-align: center; /* Centraliza o texto */
     padding: 10px; /* Espaçamento interno */
     background-color: #f1f1f1; /* Cor de fundo */
 }
 
-/* Estilo do logo */
 .logo {
     display: flex; /* Usa Flexbox */
-    align-items: center; /* Centraliza verticalmente os itens */
-    gap: 10px; /* Espaçamento entre os itens */
+    align-items: center; /* Centraliza verticalmente */
+    gap: 10px; /* Espaçamento entre itens */
 }
 
 .logo h2 {
@@ -56,10 +50,9 @@ footer {
     height: 40px; /* Altura da imagem do logo */
 }
 
-/* Estilo dos links de navegação */
 nav a {
     margin-left: 30px; /* Espaçamento à esquerda */
-    text-decoration: none; /* Remove o sublinhado */
+    text-decoration: none; /* Remove sublinhado */
     color: #333; /* Cor do texto */
     font-weight: 500; /* Peso da fonte */
     font-size: 16px; /* Tamanho da fonte */
@@ -69,16 +62,14 @@ nav a:hover {
     color: #4CAF50; /* Cor ao passar o mouse */
 }
 
-/* Estilo do contêiner principal */
 .container {
     display: flex; /* Usa Flexbox */
     justify-content: space-between; /* Espaça os itens horizontalmente */
-    align-items: center; /* Centraliza verticalmente os itens */
+    align-items: center; /* Centraliza verticalmente */
     padding: 0 40px; /* Espaçamento interno */
     flex-wrap: nowrap; /* Não permite quebra de linha */
 }
 
-/* Estilo do conteúdo à esquerda */
 .left-content {
     max-width: 700px; /* Largura máxima */
 }
@@ -89,62 +80,55 @@ nav a:hover {
     margin-bottom: 20px; /* Espaçamento inferior */
 }
 
-/* Estilo da lista de recursos */
 .features {
-    list-style: none; /* Remove os marcadores da lista */
-    padding: 0; /* Remove o padding */
-    margin: 20px 0; /* Espaçamento superior e inferior */
+    list-style: none; /* Remove marcadores da lista */
+    padding: 0; /* Remove padding */
+    margin: 20px 0; /* Espaçamento vertical */
 }
 
 .features li {
     display: flex; /* Usa Flexbox */
-    align-items: flex-start; /* Alinha os itens no topo */
+    align-items: flex-start; /* Alinha no topo */
     margin-bottom: 15px; /* Espaçamento inferior */
     font-size: 16px; /* Tamanho da fonte */
     line-height: 1.4; /* Altura da linha */
 }
 
 .features li::before {
-    content: '✔️'; /* Adiciona um ícone antes do texto */
+    content: '✔️'; /* Ícone antes do texto */
     color: #4CAF50; /* Cor do ícone */
     font-size: 18px; /* Tamanho do ícone */
     margin-right: 10px; /* Espaçamento à direita */
 }
 
-/* Estilo do botão de chamada para ação */
 .cta-button {
     background-color: #238823; /* Cor de fundo */
     color: white; /* Cor do texto */
-    border: none; /* Remove a borda */
+    border: none; /* Remove borda */
     padding: 15px 30px; /* Espaçamento interno */
     font-size: 1.2rem; /* Tamanho da fonte */
     border-radius: 5px; /* Bordas arredondadas */
-    cursor: pointer; /* Mostra o cursor de clique */
+    cursor: pointer; /* Cursor de clique */
 }
 
 .cta-button:focus {
     outline: 2px solid #4CAF50; /* Destaque ao focar */
 }
 
-/* Estilo da imagem à direita */
 .right-image img {
     max-width: 100%; /* Largura máxima */
-    flex: 1; /* Faz a imagem ocupar o espaço disponível */
-    display: flex; /* Usa Flexbox */
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
+    flex: 1; /* Ocupa espaço disponível */
 }
 
-/* Seção "Sobre nós" */
 .sobre-nos {
     padding: 4rem 2rem; /* Espaçamento interno */
     background-color: #f9f9f9; /* Cor de fundo clara */
     display: flex; /* Usa Flexbox */
-    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    justify-content: center; /* Centraliza horizontalmente */
 }
 
 .conteudo {
-    max-width: 800px; /* Define a largura máxima do conteúdo */
+    max-width: 800px; /* Largura máxima */
     text-align: center; /* Centraliza o texto */
 }
 
@@ -168,49 +152,46 @@ nav a:hover {
 }
 
 .autores ul {
-    list-style: none; /* Remove os marcadores da lista */
-    padding: 0; /* Remove o padding padrão */
+    list-style: none; /* Remove marcadores da lista */
+    padding: 0; /* Remove padding padrão */
 }
 
 .autores li {
-    margin: 0.5rem 0; /* Espaçamento vertical entre os itens */
+    margin: 0.5rem 0; /* Espaçamento vertical entre itens */
 }
 
-/*pagina como funciona*/
 .comofunciona {
-    padding: 4rem 2rem;
-      background-color: #f9f9f9;
-      display: flex;
-      justify-content: center;
+    padding: 4rem 2rem; /* Espaçamento interno */
+    background-color: #f9f9f9; /* Cor de fundo */
+    display: flex; /* Usa Flexbox */
+    justify-content: center; /* Centraliza horizontalmente */
 }
+
 .comofunciona h1 {
-  font-size: 2.4rem; /* Define o tamanho da fonte */
-  color: #30a136; /* Define a cor do texto */
-  margin-bottom: 2rem; /* Espaçamento inferior */
-  text-align: center; /* Centraliza o texto */
+    font-size: 2.4rem; /* Tamanho da fonte */
+    color: #30a136; /* Cor do texto */
+    margin-bottom: 2rem; /* Espaçamento inferior */
+    text-align: center; /* Centraliza o texto */
 }
+
 .comofunciona p {
-    
-    max-width: 900px;
-    text-align: center;
-    line-height: 2.0;
-
+    max-width: 900px; /* Largura máxima */
+    text-align: center; /* Centraliza o texto */
+    line-height: 2.0; /* Altura da linha */
 }
 
-/* Estilo das opções */
 .options {
     display: flex; /* Usa Flexbox */
     flex-wrap: wrap; /* Permite quebra de linha */
     justify-content: center; /* Centraliza horizontalmente */
-    gap: 20px; /* Espaçamento entre os itens */
+    gap: 20px; /* Espaçamento entre itens */
     align-items: center; /* Centraliza verticalmente */
     height: 100%; /* Altura total */
 }
 
-/* Estilo de cada opção */
 .option {
     display: flex; /* Usa Flexbox */
-    flex-direction: column; /* Organiza os itens em coluna */
+    flex-direction: column; /* Organiza em coluna */
     justify-content: center; /* Centraliza verticalmente */
     align-items: center; /* Centraliza horizontalmente */
     text-align: center; /* Centraliza o texto */
@@ -218,46 +199,44 @@ nav a:hover {
     border: 1px solid #ccc; /* Borda cinza */
     border-radius: 10px; /* Bordas arredondadas */
     background-color: #f9f9f9; /* Cor de fundo */
-    cursor: pointer; /* Mostra o cursor de clique */
+    cursor: pointer; /* Cursor de clique */
     transition: transform 0.3s ease; /* Animação ao passar o mouse */
     height: 320px; /* Altura fixa */
     width: 250px; /* Largura fixa */
-    overflow: hidden; /* Esconde conteúdo que ultrapassar */
+    overflow: hidden; /* Esconde conteúdo extra */
 }
 
 .option:hover {
-    transform: scale(1.05); /* Aumenta levemente ao passar o mouse */
+    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
 }
 
 .option img {
-    max-width: 100%; /* Faz a imagem ocupar toda a largura disponível */
-    max-height: 70%; /* Limita a altura máxima a 70% do quadro */
-    object-fit: contain; /* Garante que a imagem mantenha a proporção */
+    max-width: 100%; /* Largura máxima */
+    max-height: 70%; /* Altura máxima */
+    object-fit: contain; /* Mantém proporção */
     margin-bottom: 10px; /* Espaçamento inferior */
 }
 
 .option strong {
-    font-size: 1.5rem; /* Aumenta o tamanho da fonte */
+    font-size: 1.5rem; /* Tamanho da fonte */
     color: #333; /* Cor do texto */
     margin-bottom: 5px; /* Espaçamento inferior */
     text-align: center; /* Centraliza o texto */
 }
 
 .option span {
-    font-size: 1rem; /* Aumenta o tamanho da fonte do subtítulo */
+    font-size: 1rem; /* Tamanho da fonte */
     color: #666; /* Cor do texto */
     text-align: center; /* Centraliza o texto */
 }
 
-/* Estilo dos botões de navegação */
 .nav-buttons {
     margin-top: 30px; /* Espaçamento superior */
 }
 
-/* Estilo dos passos */
 .step {
     display: none; /* Esconde os passos por padrão */
-    flex-direction: column; /* Organiza os itens em coluna */
+    flex-direction: column; /* Organiza em coluna */
     align-items: center; /* Centraliza horizontalmente */
     text-align: center; /* Centraliza o texto */
     justify-content: center; /* Centraliza verticalmente */
@@ -267,15 +246,22 @@ nav a:hover {
     display: flex; /* Mostra o passo ativo */
 }
 
-/* Estilo geral dos botões */
+.step p {
+    font-size: 1.2rem; /* Tamanho da fonte */
+    line-height: 1.5; /* Altura da linha */
+    color: #444; /* Cor do texto */
+    margin-bottom: 20px; /* Espaçamento inferior */
+    font-weight: bold; /* Negrito */
+}
+
 button {
     background: #2e7d32; /* Cor de fundo */
     color: white; /* Cor do texto */
-    border: none; /* Remove a borda */
+    border: none; /* Remove borda */
     border-radius: 5px; /* Bordas arredondadas */
     padding: 10px 20px; /* Espaçamento interno */
     font-size: 16px; /* Tamanho da fonte */
-    cursor: pointer; /* Mostra o cursor de clique */
+    cursor: pointer; /* Cursor de clique */
     margin: 0 10px; /* Espaçamento lateral */
 }
 
@@ -285,38 +271,139 @@ button:hover {
 
 button:disabled {
     background: #ccc; /* Cor do botão desabilitado */
-    cursor: not-allowed; /* Cursor de não permitido */
+    cursor: not-allowed; /* Cursor bloqueado */
 }
 
 .grid-carbs {
-    display: grid; /* Define um layout em grade */
-    grid-template-columns: repeat(5, 1fr); /* Cria 4 colunas de tamanhos iguais */
-    gap: 20px; /* Espaçamento entre os itens */
-    justify-content: center; /* Centraliza a grade horizontalmente */
-    margin: 20px 0; /* Espaçamento superior e inferior */
+    display: grid; /* Usa grid layout */
+    grid-template-columns: repeat(5, 1fr); /* 5 colunas iguais */
+    gap: 20px; /* Espaçamento entre itens */
+    justify-content: center; /* Centraliza horizontalmente */
+    margin: 20px 0; /* Espaçamento vertical */
 }
 
 .grid-carbs label {
-  border: 1px solid #ccc; /* Adiciona uma borda cinza */
-  border-radius: 8px; /* Bordas arredondadas */
-  padding: 10px; /* Espaçamento interno */
-  text-align: center; /* Centraliza o texto */
-  display: flex; /* Usa Flexbox */
-  flex-direction: column; /* Organiza os itens em coluna */
-  align-items: center; /* Centraliza horizontalmente */
-  cursor: pointer; /* Mostra o cursor de clique */
-  font-weight: 500; /* Define o peso da fonte */
-  font-size: 16px; /* Define o tamanho da fonte */
+    border: 1px solid #ccc; /* Borda cinza */
+    border-radius: 8px; /* Bordas arredondadas */
+    padding: 10px; /* Espaçamento interno */
+    text-align: center; /* Centraliza o texto */
+    display: flex; /* Usa Flexbox */
+    flex-direction: column; /* Organiza em coluna */
+    align-items: center; /* Centraliza horizontalmente */
+    cursor: pointer; /* Cursor de clique */
+    font-weight: 500; /* Peso da fonte */
+    font-size: 16px; /* Tamanho da fonte */
 }
 
 .grid-carbs input[type="checkbox"] {
-  margin-bottom: 8px; /* Espaçamento inferior */
+    margin-bottom: 8px; /* Espaçamento inferior */
 }
 
 .grid-carbs img {
-  width: 60px; /* Define a largura fixa da imagem */
-  height: 60px; /* Define a altura fixa da imagem */
-  object-fit: contain; /* Garante que a imagem mantenha sua proporção */
-  margin-bottom: 5px; /* Espaçamento inferior */
+    width: 60px; /* Largura fixa */
+    height: 60px; /* Altura fixa */
+    object-fit: contain; /* Mantém proporção */
+    margin-bottom: 5px; /* Espaçamento inferior */
 }
 
+.radio-group {
+    margin-bottom: 20px; /* Espaçamento inferior */
+}
+
+.radio-group label {
+    display: block; /* Ocupa linha inteira */
+    margin: 8px 0; /* Espaçamento vertical */
+    font-size: 18px; /* Tamanho da fonte */
+    cursor: pointer; /* Cursor de clique */
+}
+
+.condicao-group label {
+    display: block; /* Ocupa linha inteira */
+    margin: 8px 0; /* Espaçamento vertical */
+    font-size: 18px; /* Tamanho da fonte */
+    cursor: pointer; /* Cursor de clique */
+}
+
+.dados-pessoais {
+    display: grid; /* Usa grid layout */
+    grid-template-columns: repeat(2, 1fr); /* 2 colunas iguais */
+    flex-direction: column; /* Direção vertical */
+    gap: 18px; /* Espaço entre campos */
+    width: 100%; /* Largura total */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    padding-bottom: 30px; /* Espaçamento inferior */
+}
+
+.dados-pessoais label {
+    display: flex; /* Usa Flexbox */
+    flex-direction: column; /* Direção vertical */
+    font-weight: 500; /* Peso da fonte */
+    color: #238823; /* Cor verde */
+    font-size: 1rem; /* Tamanho da fonte */
+    gap: 6px; /* Espaço entre texto e input */
+}
+
+.dados-pessoais input {
+    padding: 10px 12px; /* Espaçamento interno */
+    border: 1.5px solid #b6e2b6; /* Borda verde clara */
+    border-radius: 6px; /* Bordas arredondadas */
+    font-size: 1rem; /* Tamanho da fonte */
+    background: #fff; /* Fundo branco */
+    transition: border 0.2s; /* Transição suave */
+}
+
+.dados-pessoais input:focus {
+    border: 1.5px solid #238823; /* Borda verde escura ao focar */
+    outline: none; /* Remove contorno padrão */
+    background: #f0fff0; /* Fundo levemente esverdeado */
+}
+
+.perfil-container {
+  position: relative; /* Para posicionar o menu */
+  display: inline-block; /* Exibe em linha */
+}
+
+.avatar {
+  height: 32px; /* Altura do avatar */
+  width: 32px; /* Largura do avatar */
+  border-radius: 50%; /* Deixa redondo */
+  cursor: pointer; /* Cursor de clique */
+}
+
+.perfil-menu {
+  display: none; /* Esconde o menu por padrão */
+  position: absolute; /* Posiciona sobreposto */
+  top: 40px; /* Distância do topo */
+  right: 0; /* Alinha à direita */
+  background-color: #f2f2f2; /* Cor de fundo */
+  border-radius: 12px; /* Bordas arredondadas */
+  padding: 10px; /* Espaçamento interno */
+  min-width: 220px; /* Largura mínima */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra */
+  z-index: 999; /* Sobrepõe outros elementos */
+}
+
+.perfil-menu strong {
+  display: block; /* Ocupa linha inteira */
+  font-weight: bold; /* Negrito */
+}
+
+.perfil-menu small {
+  display: block; /* Ocupa linha inteira */
+  color: #444; /* Cor do texto */
+  margin-bottom: 10px; /* Espaçamento inferior */
+}
+
+.perfil-menu hr {
+  border: none; /* Remove borda padrão */
+  border-top: 1px solid #b4d6a1; /* Linha superior */
+  margin: 8px 0; /* Espaçamento vertical */
+}
+
+.perfil-menu a {
+  display: block; /* Ocupa linha inteira */
+  text-decoration: none; /* Remove sublinhado */
+  color: #222; /* Cor do texto */
+  padding: 5px 0; /* Espaçamento vertical */
+  font-size: 14px; /* Tamanho da fonte */
+}
