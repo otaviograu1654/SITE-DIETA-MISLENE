@@ -13,39 +13,118 @@
 
 <body>
   <header>
-  <div class="logo">
-    <a href="inicial.html">
-      <img src="imagens/logo.png" alt="Logo da WeekDiet" loading="lazy">
-    </a>
-    <h2>WeekDiet</h2>
-  </div>
-
-  <nav>
-    <a href="userdieta.html">Sua Dieta</a>
-    <a href="userhistorico.html">Histórico de dietas</a>
-    <a href="userprogresso.html">Progresso</a>
-    <a href="userpreferencias.html">Preferências</a>
-    <a href="usernutricionista.html">Nutricionistas</a>
-    <a href="userajuda.html">Ajuda</a>
-    <div class="perfil-container">
-      <img src="imagens/perfil.png" alt="Perfil do usuário" class="avatar" onclick="toggleMenu()">
-      <div class="perfil-menu" id="perfilMenu">
-        <strong>Gabriel Tolentino</strong>
-        <small>g-tolentino@hotmail.com</small>
-        <hr>
-        <a href="#">✏️ Dados Pessoais</a>
-        <a href="#">⚙️ Configurações</a>
-        <a href="#">📄 Termos de uso</a>
-        <a href="#">🔒 Segurança</a>
-        <hr>
-        <a href="#">↩️ Sair</a>
-      </div>
+    <div class="logo">
+      <a href="inicial.html">
+        <img src="imagens/logo.png" alt="Logo da WeekDiet" loading="lazy">
+      </a>
+      <h2>WeekDiet</h2>
     </div>
-  </nav>
-</header>
 
-  <main>
+    <nav>
+      <a href="userdieta.html">Sua Dieta</a>
+      <a href="userhistorico.html">Histórico de dietas</a>
+      <a href="userprogresso.html">Progresso</a>
+      <a href="userpreferencias.html">Preferências</a>
+      <a href="usernutricionista.html">Nutricionistas</a>
+      <a href="userajuda.html">Ajuda</a>
+      <div class="perfil-container">
+        <img src="imagens/perfil.png" alt="Perfil do usuário" class="avatar" onclick="toggleMenu()">
+        <div class="perfil-menu" id="perfilMenu">
+          <strong>Gabriel Tolentino</strong>
+          <small>g-tolentino@hotmail.com</small>
+          <hr>
+          <a href="#">✏️ Dados Pessoais</a>
+          <a href="#">⚙️ Configurações</a>
+          <a href="#">📄 Termos de uso</a>
+          <a href="#">🔒 Segurança</a>
+          <hr>
+          <a href="#">↩️ Sair</a>
+        </div>
+      </div>
+    </nav>
+  </header>
 
+  <main style="flex-direction: column;" class="plano-completo">
+    <h2>Plano alimentar completo</h2>
+
+    <div class="tabela-container">
+      <table class="tabela-plano">
+        <thead>
+          <tr>
+            <th></th>
+            <th>Café da manhã</th>
+            <th>Pós-Treino</th>
+            <th>Almoço</th>
+            <th>Lanche</th>
+            <th>Ceia</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Segunda-feira</td>
+            <td>2 ovos cozidos + 1 fatia de pão integral + café sem açúcar</td>
+            <td>1 banana + 1 scoop de whey + 5g creatina</td>
+            <td>Arroz branco + feijão + frango grelhado + brócolis refogado</td>
+            <td>Iogurte natural + 1 colher de aveia</td>
+            <td>Omelete com 2 ovos + 1 fatia de queijo branco</td>
+          </tr>
+          <tr>
+            <td>Terça-feira</td>
+            <td>Vitamina de banana com leite e aveia</td>
+            <td>1 fatia de pão + 1 ovo mexido + 1 scoop de whey</td>
+            <td>Batata cozida + carne moída magra + abobrinha</td>
+            <td>Leite com café + 3 biscoitos integrais</td>
+            <td>Sardinha + chuchu refogado</td>
+          </tr>
+          <tr>
+            <td>Quarta-feira</td>
+            <td>1 fatia de queijo + 2 ovos mexidos + café</td>
+            <td>1 banana + 1 scoop de whey + 5g creatina</td>
+            <td>Macarrão + frango desfiado + cenoura ralada</td>
+            <td>1 fatia de pão + 1 colher de requeijão light</td>
+            <td>1 copo de leite + 1 ovo cozido</td>
+          </tr>
+          <tr>
+            <td>Quinta-feira</td>
+            <td>Omelete com 2 ovos + 1 colher de aveia + café</td>
+            <td>Shake de whey com água + 1 banana pequena</td>
+            <td>Arroz + feijão + carne cozida + couve refogada</td>
+            <td>Iogurte natural + morangos fatiados</td>
+            <td>1 pedaço de queijo branco + 1 colher de linhaça</td>
+          </tr>
+          <tr>
+            <td>Sexta-feira</td>
+            <td>Leite + 2 torradas integrais + ovo cozido</td>
+            <td>Banana + 1 scoop de whey + 5g creatina</td>
+            <td>Macarrão + frango grelhado + beterraba cozida</td>
+            <td>Vitamina de banana com leite e aveia</td>
+            <td>1 fatia de pão + 1 ovo mexido</td>
+          </tr>
+          <tr>
+            <td>Sábado</td>
+            <td>Pão integral + 1 fatia de queijo + café</td>
+            <td>1 iogurte + 1 banana + 1 scoop de whey</td>
+            <td>Arroz + sardinha + espinafre refogado</td>
+            <td>Leite com canela + 2 biscoitos de aveia</td>
+            <td>Omelete com legumes refogados</td>
+          </tr>
+          <tr>
+            <td>Domingo</td>
+            <td>Vitamina de banana + 1 colher de aveia + 2 ovos cozidos</td>
+            <td>Shake de whey com creatina + 1 torrada</td>
+            <td>Batata doce cozida + carne assada + cenoura + alface</td>
+            <td>Iogurte natural com chia</td>
+            <td>Queijo branco + chá sem açúcar</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="botoes-plano">
+      <button>Gerar PDF</button>
+      <button>Gerar lista de compras</button>
+      <button class="verde">Concluir Semana</button>
+    </div>
   </main>
 
   <footer>

@@ -274,6 +274,8 @@ button:disabled {
     cursor: not-allowed; /* Cursor bloqueado */
 }
 
+
+
 .grid-carbs {
     display: grid; /* Usa grid layout */
     grid-template-columns: repeat(5, 1fr); /* 5 colunas iguais */
@@ -406,4 +408,214 @@ button:disabled {
   color: #222; /* Cor do texto */
   padding: 5px 0; /* Espaçamento vertical */
   font-size: 14px; /* Tamanho da fonte */
+}
+
+/*
+ Parte dos feedbacks!!!
+*/
+.feedbacks-section {
+    padding: 4rem 2rem;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.feedbacks-section h1 {
+    font-size: 2.4rem;
+    color: #30a136;
+    margin-bottom: 2rem;
+}
+
+.feedbacks-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.feedback {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.feedback img {
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.feedback p {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 10px;
+}
+.feedbacks-list img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+.feedback-contact {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.feedback-contact a {
+    color: #2e7d32; /* verde escuro */
+    text-decoration: underline;
+}
+
+.resumo-diario {
+  font-family: Arial, sans-serif;
+  padding: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.resumo-diario h1 {
+  color: #2f7b39;
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+.resumo-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.resumorefeições{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  flex: 1;
+  min-width: 280px;
+}
+
+.resumorefeicao {
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #fff;
+}
+
+.resumorefeicao strong {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
+.resumorefeicao p {
+  margin: 0;
+  font-size: 14px;
+  color: #333;
+}
+
+.imginicialuser {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imginicialuser img {
+  max-width: 100%;      /* Aumenta a largura máxima */
+  height: auto;        /* Mantém proporção */
+  max-height: 600px;   /* Aumenta a altura máxima */
+  border-radius: 16px; /* Mantém bordas arredondadas */
+}
+
+/* Destaque para o título de boas-vindas */
+.bem-vindo {
+  color: #238823;           /* Verde principal da marca */
+  font-size: 2.4rem;        /* Tamanho grande */
+  font-weight: bold;        /* Negrito */
+  text-align: center;       /* Centralizado */
+  letter-spacing: 1px;      /* Espaçamento entre letras */
+  text-shadow: 0 2px 8px #d8f4c3; /* Sombra suave verde clara */
+}
+
+.plano-completo {
+  max-width: 95%; /* * Largura máxima do container */
+  margin: auto;   /* * Centraliza o container */
+  padding: 20px;  /* * Espaçamento interno */
+}
+
+.plano-completo h2 {
+  text-align: center;                 /* * Centraliza o texto */
+  color: #388e3c;                     /* * Cor verde escura */
+  margin-bottom: 20px;                /* * Espaço abaixo do título */
+}
+
+.tabela-container {
+  overflow-x: auto;                   /* * Permite rolagem horizontal se necessário */
+}
+
+.tabela-plano {
+  width: 100%;                        /* * Ocupa toda a largura disponível */
+  border-collapse: collapse;           /* * Remove espaçamento entre bordas */
+  text-align: left;                   /* * Alinha o texto à esquerda */
+}
+
+.tabela-plano thead {
+  background-color: #c8e6c9;          /* * Fundo verde claro no cabeçalho */
+}
+
+.tabela-plano th,
+.tabela-plano td {
+  border: 1px solid #ccc;             /* * Borda cinza clara */
+  padding: 10px;                      /* * Espaçamento interno */
+  vertical-align: top;                /* * Alinha o conteúdo ao topo */
+}
+
+.tabela-plano tbody tr:nth-child(even) {
+  background-color:rgb(230, 230, 230);          /* * Fundo alternado para linhas pares */
+}
+
+.tabela-plano td:first-child {
+  font-weight: bold;                  /* * Deixa o texto em negrito */
+  background-color: #e0f2f1;          /* * Fundo azul esverdeado para a primeira coluna */
+}
+
+.botoes-plano {
+  display: flex;           /* * Usa Flexbox para os botões */
+  justify-content: center; /* * Centraliza os botões */
+  gap: 50px;               /* * Espaço entre os botões */
+  margin-top: 30px;        /* * Espaço acima dos botões */
+  flex-wrap: wrap;         /* * Permite quebra de linha dos botões */
+}
+
+.botoes-plano button {
+  padding: 10px 20px;                 /* * Espaçamento interno */
+  border: none;                       /* * Remove a borda padrão */
+  background-color: #c8e6c9;          /* * Fundo verde claro */
+  border-radius: 8px;                 /* * Bordas arredondadas */
+  cursor: pointer;                    /* * Cursor de clique */
+  font-weight: bold;                  /* * Texto em negrito */
+  color: #333;                        /* * Cor do texto */
+  transition: background-color 0.3s ease; /* * Transição suave ao passar o mouse */
+}
+
+.botoes-plano button:hover {
+  background-color: #a5d6a7;          /* * Fundo verde mais escuro ao passar o mouse */
+}
+
+.botoes-plano .verde {
+  background-color: #81c784;           /* * Fundo verde médio para botões especiais */
+}
+
+.botoes-plano .verde:hover {
+  background-color: #66bb6a;           /* * Fundo verde escuro ao passar o mouse */
+}
+.tabela-plano tbody tr:hover {
+  background-color: #e0f7fa;
 }
