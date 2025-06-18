@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Termos de Uso - WeekDiet</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #222;
+    }
+
+    header {
+      background-color: #ffffff;
+      border-bottom: 1px solid #ddd;
+      padding: 10px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      margin-bottom: 5px;
+    }
+
+    .logo img {
+      height: 35px;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: #28a745;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+      line-height: 1.6;
+    }
+
+    h1 {
+      text-align: center;
+      color: #28a745;
+      margin-bottom: 30px;
+    }
+
+    section {
+      margin-bottom: 30px;
+    }
+
+    .termos-toggle {
+      background-color: #28a745;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+
+    .termos-conteudo {
+      display: none;
+      background: #ffffff;
+      border: 1px solid #ddd;
+      padding: 20px;
+      border-radius: 5px;
+      margin-top: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      color: #666;
+    }
+  </style>
+</head>
+<link rel="icon" href="imagens/principal/logo.png" type="image/x-icon">
+<body>
+
+<header>
+  <div class="logo">
+          <a href="inicial.html">
+            <img src="imagens/principal/logo.png" alt="Logo da WeekDiet">
+          </a>
+  <nav>
+    <a href="comofunciona.html">Como funciona</a>
+    <a href="feedbacks.html">Feedbacks</a>
+    <a href="sobre.html">Sobre nós</a>
+    <a href="login.html">Login</a>
+  </nav>
+</header>
+
+<main>
+  <h1>Termos de Uso e Consumo</h1>
+
+  <section>
+    <p>Seja Bem-Vindo ao site da Week Diet. Antes de explorar tudo o que temos a oferecer, é importante que você entenda e concorde com algumas regras básicas que regem o uso do nosso site <a href="inicial.html">Week Diet</a> e qualquer outro serviço digital que nós oferecemos.
+
+    <p>Ao usar nosso site e serviços, você automaticamente concorda em seguir as regras que estabelecemos aqui. Caso não concorde com algo, por favor, considere não usar nossos serviços. É muito importante para nós que você se sinta seguro e informado a todo momento.</p>
+    
+    <button class="termos-toggle" onclick="toggleTermos()">Ler Termos Detalhados</button>
+    
+    <div class="termos-conteudo" id="conteudoTermos">
+      <h2>1. Aceitando os Termos</h2>
+    <p>Ao navegar e usar o site da Week Diet, você concorda automaticamente com nossas regras e condições. Estamos sempre procurando melhorar, então esses termos podem mudar de vez em quando. Se fizermos alterações significativas, vamos postar as atualizações aqui no site. Continuar usando o site após essas mudanças significa que você aceita os novos termos.</p>
+      <h2>2. Como usar nosso site</h2>
+      <p> Para utilizar nosso site de maneira harmônica, com acompamhamento e progressão de dados, é necessário que faça seu cadastramento,pedimos que você seja honesto ao fornecer suas informações e que mantenha sua senha e login seguros. Se decidir compartilhar algum conteúdo conosco, como comentários, por favor, faça-o de maneira respeitosa e dentro da lei.</p>
+
+      <h2>3. Lista de Compras</h2>
+      <p>Ao final da personalização, será gerada automaticamente uma lista de compras contendo os ingredientes necessários para sua dieta semanal.</p>
+
+      <h2>4. Responsabilidade</h2>
+      <p>As sugestões alimentares não substituem acompanhamento médico ou nutricional. Consulte um profissional de saúde antes de iniciar qualquer dieta.</p>
+
+      <h2>5. Alterações nos Termos</h2>
+      <p>O WeekDiet pode atualizar estes termos sem aviso prévio. Recomendamos revisá-los periodicamente.</p>
+
+      <h2>6. Sua Privacidade</h2>
+      <p>Na Week Diet, a privacidade é um valor essencial. Ao interagir com nosso site, você aceita nossa Política de Privacidade, que detalha nossa abordagem responsável e conforme às leis para o manejo dos seus dados pessoais. Nosso compromisso é com a transparência e a segurança.
+
+Adotamos práticas de segurança para proteger suas informações contra acesso não autorizado e compartilhamento indevido, assegurando que qualquer cooperação com terceiros ocorra apenas com base na sua aprovação ou exigências legais claras.</p>
+
+    </div>
+  </section>
+
+  <h1>Dúvidas ou Comentários?</h1>
+
+  <section>
+    <p>Se tiver dúvidas sobre estes termos, não hesite em nos contatar através do e-mail <a href="sabrynaalves@unipam.edu.br">sabrynaalves@unipam.edu.br</a>.</p>
+</main>
+
+<footer>
+  &copy; 2025 WeekDiet. Todos os direitos reservados.
+</footer>
+
+<script>
+  function toggleTermos() {
+    const conteudo = document.getElementById("conteudoTermos");
+    conteudo.style.display = conteudo.style.display === "block" ? "none" : "block";
+  }
+</script>
+
+</body>
+</html>
