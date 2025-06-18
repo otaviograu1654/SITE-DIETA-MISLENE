@@ -845,6 +845,13 @@ button:disabled {
 }
 
 /* pagina user nutricionista */
+.nutricionista-pagina {
+  display: flex;
+  flex-direction: column;   /* Deixa o conteúdo da página em coluna, um embaixo do outro */
+  align-items: center;      /* Centraliza os itens horizontalmente dentro do main */
+  gap: 30px;                /* Espaço entre os blocos (cards e formulário) */
+}
+
 
 /* Container principal que dá o efeito de "quadro centralizado" */
 .container-nutri {
@@ -930,4 +937,58 @@ button:disabled {
   margin: 0 auto;
   text-align: center;
   width: 100%;
+}
+/* Página userprogresso */
+
+/* Área geral do conteúdo */
+.progresso-conteudoo {
+  display: flex;                  /* Faz tabela e gráfico ficarem lado a lado */
+  align-items: flex-start;        /* Alinha no topo */
+  gap: 40px;                      /* Espaço entre a tabela e o gráfico */
+  margin-left: 30px;              /* Move tudo pra esquerda */
+  margin-top: 20px;
+}
+
+/* Tabela de progresso */
+.tabela-progressoo {
+  border-collapse: collapse;
+  width: auto;                    /* Largura automática */
+}
+
+.tabela-progressoo th,
+.tabela-progressoo td {
+  border: 1px solid #ccc;
+  padding: 10px 15px;
+  text-align: center;
+}
+
+.tabela-progressoo thead {
+  background-color: #c8e6c9;      /* Verde claro no cabeçalho */
+}
+
+.tabela-progressoo tbody tr:nth-child(even) {
+  background-color: #f9f9f9;      /* Linhas pares com fundo diferente */
+}
+
+/* Container do gráfico pizza */
+.graficoo-container {
+  margin-top: 30px;
+}
+
+/* Container do gráfico de barras */
+.grafico-barras-container {
+  margin: 40px 30px;                  /* Margem pra afastar do conteúdo acima e deixar alinhado à esquerda */
+}
+
+.grafico-barras-container h3 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Força o conteúdo da página de progresso a ficar em coluna (um embaixo do outro) */
+main.progresso-pagina {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;  /* Mantém o conteúdo alinhado à esquerda */
+  gap: 40px;                /* Espaço entre os blocos (tabela, pizza, barras) */
 }

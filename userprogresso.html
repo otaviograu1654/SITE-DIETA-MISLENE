@@ -8,6 +8,7 @@
   <meta name="description" content="Acompanhe seu progresso na dieta e veja suas conquistas na WeekDiet.">
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" href="imagens/logo.png" type="image/x-icon">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> 
   <script src="script.js"></script>
 </head>
 
@@ -44,9 +45,57 @@
   </nav>
 </header>
 
-  <main>
+  <main class="progresso-pagina">
 
-  </main>
+  <h2 style="margin-left: 30px; margin-top: 20px;">Gabriel Tolentino</h2>
+  <h2 style="margin-left: 30px; margin-top: 20px;">Seu Progresso</h2>
+
+
+  
+  <div class="progresso-conteudoo">
+    <table class="tabela-progressoo">
+  <thead>
+    <tr>
+      <th>Semana</th>
+      <th>Peso (kg)</th>
+      <th>IMC</th>
+      <th>% Gordura</th>
+      <th>% Massa Magra</th>
+    </tr>
+  </thead>
+  <tbody id="tabela-corpo">
+    <tr><td>Semana 1</td><td>80</td><td>25.0</td><td>22%</td><td>78%</td></tr>
+    <tr><td>Semana 2</td><td>79.8</td><td>24.9</td><td>21%</td><td>79%</td></tr>
+    <tr><td>Semana 3</td><td>79.2</td><td>24.7</td><td>21%</td><td>79%</td></tr>
+    <tr><td>Semana 4</td><td>78.7</td><td>24.6</td><td>20%</td><td>80%</td></tr>
+    <tr class="linha-extra"><td>Semana 5</td><td>78.2</td><td>24.5</td><td>20%</td><td>80%</td></tr>
+    <tr class="linha-extra"><td>Semana 6</td><td>77.6</td><td>24.3</td><td>19%</td><td>81%</td></tr>
+    <tr class="linha-extra"><td>Semana 7</td><td>77.1</td><td>24.2</td><td>19%</td><td>81%</td></tr>
+    <tr class="linha-extra"><td>Semana 8</td><td>76.5</td><td>24.0</td><td>18%</td><td>82%</td></tr>
+    <tr class="linha-extra"><td>Semana 9</td><td>76</td><td>23.9</td><td>18%</td><td>82%</td></tr>
+    <tr class="linha-extra"><td>Semana 10</td><td>75.6</td><td>23.7</td><td>17%</td><td>83%</td></tr>
+    <tr class="linha-extra"><td>Semana 11</td><td>75.1</td><td>23.6</td><td>17%</td><td>83%</td></tr>
+    <tr class="linha-extra"><td>Semana 12</td><td>74.7</td><td>23.5</td><td>16%</td><td>84%</td></tr>
+    <tr class="linha-extra"><td>Semana 13</td><td>74.2</td><td>23.3</td><td>16%</td><td>84%</td></tr>
+    <tr class="linha-extra"><td>Semana 14</td><td>73.8</td><td>23.2</td><td>15%</td><td>85%</td></tr>
+    <tr class="linha-extra"><td>Semana 15</td><td>73.3</td><td>23.1</td><td>15%</td><td>85%</td></tr>
+    <tr class="linha-extra"><td>Semana 16</td><td>72.9</td><td>23.0</td><td>14%</td><td>86%</td></tr>
+  </tbody>
+</table>
+
+<button id="btn-ver-mais" onclick="mostrarMais()">Ver mais</button>
+
+    
+
+    <div class="graficoo-container">
+      <canvas id="graficoPizza" width="300" height="300"></canvas>
+    </div>
+  </div>
+  <div class="grafico-barras-container">
+  <h3>Peso por Semana</h3>
+  <canvas id="graficoBarras" width="600" height="300"></canvas>
+</div>
+</main>
 
   <footer>
     <p>&copy; 2025 WeekDiet. Todos os direitos reservados.</p>
