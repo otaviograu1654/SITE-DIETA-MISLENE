@@ -13,39 +13,70 @@
 
 <body>
   <header>
-  <div class="logo">
-    <a href="inicial.html">
-      <img src="imagens/logo.png" alt="Logo da WeekDiet" loading="lazy">
-    </a>
-    <h2>WeekDiet</h2>
-  </div>
+    <div class="logo">
+      <a href="inicial.html">
+        <img src="imagens/logo.png" alt="Logo da WeekDiet" loading="lazy">
+      </a>
+      <h2>WeekDiet</h2>
+    </div>
 
-  <nav>
-    <a href="userdieta.html">Sua Dieta</a>
-    <a href="userhistorico.html">Histórico de dietas</a>
-    <a href="userprogresso.html">Progresso</a>
-    <a href="userpreferencias.html">Preferências</a>
-    <a href="usernutricionista.html">Nutricionistas</a>
-    <a href="userajuda.html">Ajuda</a>
-    <div class="perfil-container">
-      <img src="imagens/perfil.png" alt="Perfil do usuário" class="avatar" onclick="toggleMenu()">
-      <div class="perfil-menu" id="perfilMenu">
-        <strong>Gabriel Tolentino</strong>
-        <small>g-tolentino@hotmail.com</small>
-        <hr>
-        <a href="#">✏️ Dados Pessoais</a>
-        <a href="#">⚙️ Configurações</a>
-        <a href="#">📄 Termos de uso</a>
-        <a href="#">🔒 Segurança</a>
-        <hr>
-        <a href="#">↩️ Sair</a>
+    <nav>
+      <a href="userdieta.html">Sua Dieta</a>
+      <a href="userhistorico.html">Histórico de dietas</a>
+      <a href="userprogresso.html">Progresso</a>
+      <a href="userpreferencias.html">Preferências</a>
+      <a href="usernutricionista.html">Nutricionistas</a>
+      <a href="userajuda.html">Ajuda</a>
+      <div class="perfil-container">
+        <img src="imagens/perfil.png" alt="Perfil do usuário" class="avatar" onclick="toggleMenu()">
+        <div class="perfil-menu" id="perfilMenu">
+          <strong>Gabriel Tolentino</strong>
+          <small>g-tolentino@hotmail.com</small>
+          <hr>
+          <a href="#">✏️ Dados Pessoais</a>
+          <a href="#">⚙️ Configurações</a>
+          <a href="#">📄 Termos de uso</a>
+          <a href="#">🔒 Segurança</a>
+          <hr>
+          <a href="#">↩️ Sair</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container-nutri">
+    <h2>Escolha um nutricionista para tirar suas dúvidas</h2>
+
+    <div class="nutricionistas-lista">
+      <div class="nutricionista-card" onclick="selecionarNutri('Ana Souza')">
+        <img src="imagens/nutricionistas/nutri1.jpg" alt="Nutricionista Ana Souza">
+        <h3>Ana Souza</h3>
+        <p>Nutrição esportiva</p>
+      </div>
+
+      <div class="nutricionista-card" onclick="selecionarNutri('Carlos Silva')">
+        <img src="imagens/nutricionistas/nutri2.jpeg" alt="Nutricionista Carlos Silva">
+        <h3>Carlos Silva</h3>
+        <p>Alimentação saudável</p>
+      </div>
+
+      <div class="nutricionista-card" onclick="selecionarNutri('Maria Lima')">
+        <img src="imagens/nutricionistas/nutri3.jpeg" alt="Nutricionista Maria Lima">
+        <h3>Maria Lima</h3>
+        <p>Nutrição clínica</p>
       </div>
     </div>
-  </nav>
-</header>
 
-  <main>
+    <form class="form-nutri" onsubmit="enviarMensagem(event)">
+      <label for="nutriSelecionada">Nutricionista selecionada:</label>
+      <input type="text" id="nutriSelecionada" name="nutriSelecionada" readonly
+        placeholder="Selecione clicando em um nutricionista">
 
+      <label for="mensagem">Sua dúvida:</label>
+      <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva aqui sua dúvida..."></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
   </main>
 
   <footer>

@@ -8,7 +8,7 @@
   <meta name="description" content="Gerencie suas preferências alimentares na WeekDiet. Personalize sua dieta de acordo com suas necessidades e gostos.">
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" href="imagens/logo.png" type="image/x-icon">
-  <script src="script.js"></script>
+  
 </head>
 
 <body>
@@ -44,14 +44,214 @@
   </nav>
 </header>
 
-  <main>
+  <main class="preferencias-alimentares" style="flex-direction: column;">
+  <h1>Visualize e modifique suas <br> preferências alimentares</h1>
 
-  </main>
+  <div class="categoria-botoes">
+    <button onclick="mostrarCategoria('carboidratos')">Carboidratos</button>
+    <button onclick="mostrarCategoria('proteinas')">Proteínas</button>
+    <button onclick="mostrarCategoria('frutas')">Frutas</button>
+    <button onclick="mostrarCategoria('legumes')">Legumes</button>
+  </div>
+
+  <div class="opcoes-container">
+    <div class="grid-carbs" id="carboidratos">
+      <label><input type="checkbox" name="carboidratos" value="arroz">
+            <img src="imagens/carboidratos/arroz.png" alt="Arroz" loading="lazy"> Arroz
+          </label>
+          <label><input type="checkbox" name="carboidratos" value="arroz integral">
+            <img src="imagens/carboidratos/arroz integral.png" alt="Arroz integral" loading="lazy"> Arroz integral
+          </label>
+          <label><input type="checkbox" name="carboidratos" value="feijão">
+            <img src="imagens/carboidratos/feijão.png" alt="Feijão" loading="lazy"> Feijão
+          </label>
+          <label><input type="checkbox" name="carboidratos" value="aveia">
+            <img src="imagens/carboidratos/aveia.png" alt="Aveia" loading="lazy"> Aveia
+          </label>
+          <label><input type="checkbox" name="carboidratos" value="cuscuz">
+            <img src="imagens/carboidratos/cuscuz.png" alt="Cuscuz" loading="lazy"> Cuscuz
+          </label>
+          <label><input type="checkbox" name="carboidratos" value="tapioca">
+            <img src="imagens/carboidratos/tapioca.png" alt="Tapioca" loading="lazy"> Tapioca
+          </label>
+          <label><input type="checkbox" name="carboidratos" value="batata inglesa">
+            <img src="imagens/carboidratos/batata inglesa.png" alt="Batata Inglesa" loading="lazy"> Batata Inglesa
+          </label>
+          <label><input type="checkbox" name="carboidratos" value="macarrao">
+            <img src="imagens/carboidratos/macarrão.png" alt="Macarrão" loading="lazy"> Macarrão
+          </label>
+          <label><input type="checkbox" name="carboidratos" value="polenta">
+            <img src="imagens/carboidratos/polenta.png" alt="Polenta" loading="lazy"> Polenta
+          </label>
+          <label><input type="checkbox" name="carboidratos" value="paes">
+            <img src="imagens/carboidratos/paes.png" alt="Pães" loading="lazy"> Pães
+          </label>
+          <label><input type="checkbox" name="carboidratos" value="Inhame">
+            <img src="imagens/carboidratos/inhame.png" alt="Inhame" loading="lazy"> Inhame
+          </label>
+          <label><input type="checkbox" name="carboidratos" value="batata doce">
+            <img src="imagens/carboidratos/batata doce.png" alt="Batata Doce" loading="lazy"> Batata Doce
+          </label>
+          <label><input type="checkbox" name="carboidratos" value="lentilha">
+            <img src="imagens/carboidratos/lentilha.png" alt="Lentilha" loading="lazy"> Lentilha
+          </label>
+          <label><input type="checkbox" name="carboidratos" value="grao de bico">
+            <img src="imagens/carboidratos/grão de bico.png" alt="Grão-de-bico" loading="lazy"> Grão-de-bico
+          </label>
+          <label><input type="checkbox" name="carboidratos" value=",ilho">
+            <img src="imagens/carboidratos/Milho.png" alt="Milho" loading="lazy"> Milho
+          </label>
+    </div>
+
+    <div class="grid-carbs" id="proteinas" style="display: none;">
+      <label><input type="checkbox" name="proteinas" value="frango">
+            <img src="imagens/proteinas/frango.png" alt="Frango" loading="lazy"> Frango
+          </label>
+          <label><input type="checkbox" name="proteinas" value="carne bovina">
+            <img src="imagens/proteinas/carne  bovina.png" alt="carne bovina" loading="lazy"> carne bovina
+          </label>
+          <label><input type="checkbox" name="proteinas" value="carne suina">
+            <img src="imagens/proteinas/Carne Suina.png" alt="carne suina" loading="lazy"> carne suina
+          </label>
+          <label><input type="checkbox" name="proteinas" value="salmao">
+            <img src="imagens/proteinas/Salmao.png" alt="Salmao" loading="lazy"> Salmao
+          </label>
+          <label><input type="checkbox" name="proteinas" value="atum">
+            <img src="imagens/proteinas/Atum.png" alt="Atum" loading="lazy"> Atum
+          </label>
+          <label><input type="checkbox" name="proteinas" value="sardinha">
+            <img src="imagens/proteinas/Sardinha.png" alt="Sardinha" loading="lazy"> Sardinha
+          </label>
+          <label><input type="checkbox" name="proteinas" value="ovo">
+            <img src="imagens/proteinas/Ovo.png" alt="Ovo" loading="lazy"> Ovo
+          </label>
+          <label><input type="checkbox" name="proteinas" value="queijo">
+            <img src="imagens/proteinas/Queijo.png" alt="Queijo" loading="lazy"> Queijo
+          </label>
+          <label><input type="checkbox" name="proteinas" value="iogurte">
+            <img src="imagens/proteinas/Iogurte.png" alt="Iogurte" loading="lazy"> Iogurte
+          </label>
+          <label><input type="checkbox" name="proteinas" value="leite">
+            <img src="imagens/proteinas/Leite.png" alt="Leite" loading="lazy"> Leite
+          </label>
+          <br>
+          <label><input type="checkbox" name="proteinas" value="tofu">
+            <img src="imagens/proteinas/Tofu.png" alt="Tofu" loading="lazy"> Tofu
+          </label>
+          <label><input type="checkbox" name="proteinas" value="whey protein">
+            <img src="imagens/proteinas/whey protein.png" alt="whey protein" loading="lazy"> Whey Protein
+          </label>
+          <label><input type="checkbox" name="proteinas" value="caseina">
+            <img src="imagens/proteinas/Caseina.png" alt="Caseina" loading="lazy"> Caseina
+          </label>
+    </div>
+
+    <div class="grid-carbs" id="frutas" style="display: none;">
+      <label><input type="checkbox" name="frutas" value="banana">
+            <img src="imagens/frutas/Banana.png" alt="Banana" loading="lazy"> Banana
+          </label>
+          <label><input type="checkbox" name="frutas" value="maça">
+            <img src="imagens/frutas/Maça.png" alt="Maça" loading="lazy"> Maça
+          </label>
+          <label><input type="checkbox" name="frutas" value="pera">
+            <img src="imagens/frutas/Pera.png" alt="Pera" loading="lazy"> Pera
+          </label>
+          <label><input type="checkbox" name="frutas" value="laranja">
+            <img src="imagens/frutas/Laranja.png" alt="Laranja" loading="lazy"> Laranja
+          </label>
+          <label><input type="checkbox" name="frutas" value="manga">
+            <img src="imagens/frutas/Manga.png" alt="Manga" loading="lazy"> Manga
+          </label>
+          <label><input type="checkbox" name="frutas" value="abacaxi">
+            <img src="imagens/frutas/Abacaxi.png" alt="Abacaxi" loading="lazy"> Abacaxi
+          </label>
+          <label><input type="checkbox" name="frutas" value="mamao">
+            <img src="imagens/frutas/Mamão.png" alt="Mamão" loading="lazy"> Mamão
+          </label>
+          <label><input type="checkbox" name="frutas" value="abacate">
+            <img src="imagens/frutas/Abacate.png" alt="Abacate" loading="lazy"> Abacate
+          </label>
+          <label><input type="checkbox" name="frutas" value="morango">
+            <img src="imagens/frutas/Morango.png" alt="Morango" loading="lazy"> Morango
+          </label>
+          <label><input type="checkbox" name="frutas" value="acerola">
+            <img src="imagens/frutas/Acerola.png" alt="Acerola" loading="lazy"> Acerola
+          </label>
+          <label><input type="checkbox" name="frutas" value="figo">
+            <img src="imagens/frutas/Figo.png" alt="Figo" loading="lazy"> Figo
+          </label>
+          <label><input type="checkbox" name="frutas" value="ameixa">
+            <img src="imagens/frutas/Ameixa.png" alt="Ameixa" loading="lazy"> Ameixa
+          </label>
+          <label><input type="checkbox" name="frutas" value="main">
+            <img src="imagens/frutas/Melancia.png" alt="Melancia" loading="lazy"> Melancia
+          </label>
+          <label><input type="checkbox" name="frutas" value="tangerina">
+            <img src="imagens/frutas/Tangerina.png" alt="Tangerina" loading="lazy"> Tangerina
+          </label>
+          <label><input type="checkbox" name="frutas" value="melão">
+            <img src="imagens/frutas/Melão.png" alt="Melão" loading="lazy"> Melão
+          </label>
+    </div>
+
+    <div class="grid-carbs" id="legumes" style="display: none;">
+      <label><input type="checkbox" name="legumes" value="cenoura">
+            <img src="imagens/legumes/Cenoura.png" alt="Cenoura" loading="lazy"> Cenoura
+          </label>
+          <label><input type="checkbox" name="legumes" value="beterraba">
+            <img src="imagens/legumes/Beterraba.png" alt="Beterraba" loading="lazy"> Beterraba
+          </label>
+          <label><input type="checkbox" name="legumes" value="brócolis">
+            <img src="imagens/legumes/Brocolis.png" alt="Brócolis" loading="lazy"> Brócolis
+          </label>
+          <label><input type="checkbox" name="legumes" value="abobrinha">
+            <img src="imagens/legumes/Abobrinha.png" alt="Abobrinha" loading="lazy"> Abobrinha
+          </label>
+          <label><input type="checkbox" name="legumes" value="berinjela">
+            <img src="imagens/legumes/Berinjela.png" alt="Berinjela" loading="lazy"> Berinjela
+          </label>
+          <label><input type="checkbox" name="legumes" value="espinafre">
+            <img src="imagens/legumes/Espinafre.png" alt="Espinafre" loading="lazy"> Espinafre
+          </label>
+          <label><input type="checkbox" name="legumes" value="repolho">
+            <img src="imagens/legumes/Repolho.png" alt="Repolho" loading="lazy"> Repolho
+          </label>
+          <label><input type="checkbox" name="legumes" value="couve">
+            <img src="imagens/legumes/Couve.png" alt="Couve" loading="lazy"> Couve
+          </label>
+          <label><input type="checkbox" name="legumes" value="couve-flor">
+            <img src="imagens/legumes/Couve-flor.png" alt="Couve-flor" loading="lazy"> Couve-flor
+          </label>
+          <label><input type="checkbox" name="legumes" value="vagem">
+            <img src="imagens/legumes/Vagem.png" alt="Vagem" loading="lazy"> Vagem
+          </label>
+          <label><input type="checkbox" name="legumes" value="chuchu">
+            <img src="imagens/legumes/Chuchu.png" alt="Chuchu" loading="lazy"> Chuchu
+          </label>
+          <label><input type="checkbox" name="legumes" value="alface">
+            <img src="imagens/legumes/Alface.png" alt="Alface" loading="lazy"> Alface
+          </label>
+          <label><input type="checkbox" name="legumes" value="tomate">
+            <img src="imagens/legumes/Tomate.png" alt="Tomate" loading="lazy"> Tomate
+          </label>
+          <label><input type="checkbox" name="legumes" value="pepino">
+            <img src="imagens/legumes/Pepino.png" alt="Pepino" loading="lazy"> Pepino
+          </label>
+          <label><input type="checkbox" name="legumes" value="acelga">
+            <img src="imagens/legumes/Acelga.png" alt="Acelga" loading="lazy"> Acelga
+          </label>
+    </div>
+  </div>
+
+  <button class="categoria-botoes">Salvar</button>
+</main>
 
   <footer>
     <p>&copy; 2025 WeekDiet. Todos os direitos reservados.</p>
   </footer>
 
+
+  <script src="script.js"></script>
 </body>
 
 </html>

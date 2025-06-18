@@ -37,20 +37,20 @@ function nextStep(current, value) {
 }
 
 function prevStep() {
-    if (currentStep > 1) {
-        currentStep--;
-        showStep(currentStep);
-    }
+  if (currentStep > 1) {
+    currentStep--;
+    showStep(currentStep);
+  }
 }
 
 function getSelectedCarbs() {
-    const selected = Array.from(document.querySelectorAll('input[name="carboidratos"]:checked'))
-        .map((checkbox) => checkbox.value); // Coleta os valores dos checkboxes marcados
-    if (selected.length === 0) {
-        alert('Por favor, selecione pelo menos um carboidrato antes de continuar.');
-        return null; // Retorna null se nenhum checkbox estiver marcado
-    }
-    return selected.join(', '); // Retorna os valores como uma string separada por vírgulas
+  const selected = Array.from(document.querySelectorAll('input[name="carboidratos"]:checked'))
+    .map((checkbox) => checkbox.value); // Coleta os valores dos checkboxes marcados
+  if (selected.length === 0) {
+    alert('Por favor, selecione pelo menos um carboidrato antes de continuar.');
+    return null; // Retorna null se nenhum checkbox estiver marcado
+  }
+  return selected.join(', '); // Retorna os valores como uma string separada por vírgulas
 }
 
 function getSelectedProteins() {
@@ -125,7 +125,7 @@ function getSelectedCondicoes() {
   return selected.join(', '); // Retorna os valores como uma string separada por vírgulas
 }
 
- //validação da senha
+//validação da senha
 document.addEventListener('DOMContentLoaded', function () {
   const form = document.querySelector('form');
   if (!form) return;
@@ -148,17 +148,73 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
-  function toggleMenu() {
-    const menu = document.getElementById("perfilMenu");
-    menu.style.display = menu.style.display === "block" ? "none" : "block";
+function toggleMenu() {
+  const menu = document.getElementById("perfilMenu");
+  menu.style.display = menu.style.display === "block" ? "none" : "block";
+}
+
+// Fecha o menu se clicar fora
+window.addEventListener("click", function (e) {
+  const menu = document.getElementById("perfilMenu");
+  const avatar = document.querySelector(".avatar");
+
+  if (!menu.contains(e.target) && e.target !== avatar) {
+    menu.style.display = "none";
   }
+});
 
-  // Fecha o menu se clicar fora
-  window.addEventListener("click", function(e) {
-    const menu = document.getElementById("perfilMenu");
-    const avatar = document.querySelector(".avatar");
 
-    if (!menu.contains(e.target) && e.target !== avatar) {
-      menu.style.display = "none";
-    }
+function mostrarCategoria(nome) {
+  // Esconde todas as categorias
+  document.querySelectorAll('.grid-carbs').forEach(function (div) {
+    div.style.display = 'none';
   });
+  // Mostra apenas a categoria escolhida
+  var selecionada = document.getElementById(nome);
+  if (selecionada) {
+    selecionada.style.display = 'grid';
+  }
+}
+
+/* pagina usernutricionista */
+// Função para quando o usuário clicar em um nutricionista
+function selecionarNutri(nome) {
+  // Preenche o campo de texto com o nome do nutricionista escolhido
+  document.getElementById('nutriSelecionada').value = nome;
+}
+
+// Função que será chamada quando o formulário for enviado
+function enviarMensagem(event) {
+  event.preventDefault(); // Impede que a página recarregue ao enviar o formulário
+
+  // Pega os valores preenchidos nos campos
+  const nutricionista = document.getElementById('nutriSelecionada').value;
+  const mensagem = document.getElementById('mensagem').value;
+
+  // Validação simples: verifica se os dois campos estão preenchidos
+  if (nutricionista && mensagem) {
+    // Mostra um alerta de sucesso
+    alert(`Sua mensagem para ${nutricionista} foi enviada com sucesso!`);
+
+    // Limpa o formulário
+    document.getElementById('nutriSelecionada').value = '';
+    document.getElementById('mensagem').value = '';
+  } else {
+    // Se faltar algum campo, avisa o usuário
+    alert('Por favor, selecione um nutricionista e escreva uma mensagem.');
+  }
+}
+
+function abrirDia(event, id) {
+      const aba = event.target;
+      const container = aba.closest('.historico-conteudo');
+
+      const todasAbas = container.querySelectorAll('.aba-dia');
+      const todosConteudos = container.querySelectorAll('.conteudo-dia');
+
+      todasAbas.forEach(btn => btn.classList.remove('ativo'));
+      todosConteudos.forEach(div => div.classList.remove('ativo'));
+
+      aba.classList.add('ativo');
+      document.getElementById(id).classList.add('ativo');
+    }

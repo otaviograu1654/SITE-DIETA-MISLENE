@@ -12,41 +12,100 @@
 </head>
 
 <body>
+
   <header>
-  <div class="logo">
-    <a href="inicial.html">
-      <img src="imagens/logo.png" alt="Logo da WeekDiet" loading="lazy">
-    </a>
-    <h2>WeekDiet</h2>
-  </div>
-
-  <nav>
-    <a href="userdieta.html">Sua Dieta</a>
-    <a href="userhistorico.html">Histórico de dietas</a>
-    <a href="userprogresso.html">Progresso</a>
-    <a href="userpreferencias.html">Preferências</a>
-    <a href="usernutricionista.html">Nutricionistas</a>
-    <a href="userajuda.html">Ajuda</a>
-    <div class="perfil-container">
-      <img src="imagens/perfil.png" alt="Perfil do usuário" class="avatar" onclick="toggleMenu()">
-      <div class="perfil-menu" id="perfilMenu">
-        <strong>Gabriel Tolentino</strong>
-        <small>g-tolentino@hotmail.com</small>
-        <hr>
-        <a href="#">✏️ Dados Pessoais</a>
-        <a href="#">⚙️ Configurações</a>
-        <a href="#">📄 Termos de uso</a>
-        <a href="#">🔒 Segurança</a>
-        <hr>
-        <a href="#">↩️ Sair</a>
-      </div>
+    <div class="logo">
+      <a href="inicial.html">
+        <img src="imagens/logo.png" alt="Logo da WeekDiet" loading="lazy">
+      </a>
+      <h2>WeekDiet</h2>
     </div>
-  </nav>
-</header>
 
-  <main>
+    <nav>
+      <a href="userdieta.html">Sua Dieta</a>
+      <a href="userhistorico.html">Histórico de dietas</a>
+      <a href="userprogresso.html">Progresso</a>
+      <a href="userpreferencias.html">Preferências</a>
+      <a href="usernutricionista.html">Nutricionistas</a>
+      <a href="userajuda.html">Ajuda</a>
+      <div class="perfil-container">
+        <img src="imagens/perfil.png" alt="Perfil do usuário" class="avatar" onclick="toggleMenu()">
+        <div class="perfil-menu" id="perfilMenu">
+          <strong>Gabriel Tolentino</strong>
+          <small>g-tolentino@hotmail.com</small>
+          <hr>
+          <a href="#">✏️ Dados Pessoais</a>
+          <a href="#">⚙️ Configurações</a>
+          <a href="#">📄 Termos de uso</a>
+          <a href="#">🔒 Segurança</a>
+          <hr>
+          <a href="#">↩️ Sair</a>
+        </div>
+      </div>
+    </nav>
+  </header>
 
-  </main>
+  <section class="ajuda-section">
+    <h1>Perguntas Frequentes</h1>
+
+    <div class="faq-item">
+      <h3>Como funciona o WeekDiet?</h3>
+      <p>O WeekDiet gera um plano alimentar semanal com base nas preferências do usuário. É fácil, rápido e prático!</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Preciso ser nutricionista para usar?</h3>
+      <p>Não! O WeekDiet é pensado para qualquer pessoa que queira melhorar sua alimentação de forma simples.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Os planos são personalizados?</h3>
+      <p>Os planos são gerados a partir das escolhas que você faz na plataforma, como tipo de alimentação, refeições, entre outros.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>O site substitui um nutricionista?</h3>
+      <p>Não! O WeekDiet oferece sugestões baseadas em preferências, mas não substitui o acompanhamento de um profissional nutricionista.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Preciso pagar para usar?</h3>
+      <p>Não! O WeekDiet é totalmente gratuito, desenvolvido como projeto acadêmico.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Meus dados estão seguros?</h3>
+      <p>Sim, seus dados são usados apenas para gerar seus planos e não são compartilhados.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Posso alterar minhas preferências?</h3>
+      <p>Claro! A qualquer momento você pode acessar "Preferências" no menu e atualizar seus dados.</p>
+    </div>
+
+    <div class="pergunta-form">
+      <h2>Envie sua dúvida para a gente</h2>
+      <form action="https://formsubmit.co/gabrielmachadosilva@unipam.edu.br" method="POST">
+
+        <label for="nome">Seu nome:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="email">Seu e-mail:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="mensagem">Sua pergunta:</label>
+        <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+        <!-- Evita spam -->
+        <input type="hidden" name="_captcha" value="false">
+
+        <!-- Após envio, volta para a própria página de ajuda -->
+        <input type="hidden" name="_next" value="userajuda.html">
+
+        <button type="submit">Enviar pergunta</button>
+      </form>
+    </div>
+  </section>
 
   <footer>
     <p>&copy; 2025 WeekDiet. Todos os direitos reservados.</p>

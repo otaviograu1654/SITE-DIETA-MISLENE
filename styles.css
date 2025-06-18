@@ -619,3 +619,315 @@ button:disabled {
 .tabela-plano tbody tr:hover {
   background-color: #e0f7fa;
 }
+
+/* * 
+ Essa parte é a do "userajuda" 
+  */
+
+.ajuda-section {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.ajuda-section h1 {
+  font-size: 2.4rem;
+  color: #2e7d32;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.faq-item {
+  margin-bottom: 20px;
+  background: #f9f9f9;
+  border-left: 5px solid #81c784;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.faq-item h3 {
+  margin: 0 0 10px;
+  color: #333;
+}
+
+.faq-item p {
+  margin: 0;
+  color: #555;
+}
+
+.pergunta-form {
+  margin-top: 50px;
+}
+
+.pergunta-form h2 {
+  font-size: 1.8rem;
+  color: #2e7d32;
+  margin-bottom: 20px;
+}
+
+.pergunta-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.pergunta-form input,
+.pergunta-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.pergunta-form button {
+  padding: 12px;
+  background-color: #81c784;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pergunta-form button:hover {
+  background-color: #66bb6a;
+}
+
+
+/* ================= HISTÓRICO DE DIETAS ================== */
+/* ================= HISTÓRICO DE DIETAS ================== */
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f6f8;
+      margin: 0;
+      padding: 0;
+    }
+
+    .historico-section {
+      max-width: 900px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: #fdfdfd;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    }
+
+    .historico-section h1 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 30px;
+    }
+
+    .historico-lista details {
+      background-color: #ffffff;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      margin-bottom: 15px;
+      padding: 15px 20px;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .historico-lista details:hover {
+      background-color: #f9f9f9;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    }
+
+    .historico-lista summary {
+      font-size: 18px;
+      font-weight: bold;
+      color: #0077cc;
+      list-style: none;
+      cursor: pointer;
+    }
+
+    .historico-lista summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .historico-conteudo {
+      margin-top: 15px;
+    }
+
+    .historico-conteudo h3 {
+      margin-bottom: 8px;
+      color: #444;
+    }
+
+    .historico-conteudo ul {
+      padding-left: 25px;
+      margin-bottom: 12px;
+    }
+
+    .historico-conteudo ul li {
+      margin-bottom: 8px;
+      line-height: 1.5;
+    }
+
+    .historico-conteudo p {
+      background-color: #f1f8ff;
+      padding: 10px 15px;
+      border-radius: 8px;
+      border-left: 4px solid #0077cc;
+    }
+
+    /* ===== ABAS DOS DIAS NO HISTÓRICO ===== */
+    .dias-semana {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 15px;
+    }
+
+    .aba-dia {
+      background-color: #a3c1ee;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .aba-dia:hover {
+      background-color: #e0e0e0;
+    }
+
+    .aba-dia.ativo {
+      background-color: #0077cc;
+      color: white;
+    }
+
+    .conteudo-dia {
+      display: none;
+    }
+
+    .conteudo-dia.ativo {
+      display: block;
+    }
+
+
+.preferencias-alimentares {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.preferencias-alimentares h1 {
+  color: #2e7d32;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.categoria-botoes {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.categoria-botoes button {
+  background-color: #388e3c;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.categoria-botoes button:hover {
+  background-color: #2e7d32;
+}
+
+/* pagina user nutricionista */
+
+/* Container principal que dá o efeito de "quadro centralizado" */
+.container-nutri {
+  max-width: 800px;                    /* Limita a largura máxima */
+  margin: 30px auto;                   /* Centraliza e dá espaçamento em cima e embaixo */
+  padding: 10px;                       /* Espaçamento interno (dentro do quadro) */
+  background-color: #ffffff;           /* Fundo branco */
+  border-radius: 10px;                 /* Cantos arredondados */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra leve pra dar destaque */
+  text-align: center;                  /* Centraliza os textos */
+}
+
+/* Área que vai agrupar os cards dos nutricionistas */
+.nutricionistas-lista {
+  display: flex;                       /* Usa Flexbox para alinhamento horizontal */
+  gap: 20px;                           /* Espaço entre os cards */
+  justify-content: center;             /* Centraliza os cards horizontalmente */
+  flex-wrap: wrap;                     /* Permite os cards quebrarem pra próxima linha se precisar */
+  margin-bottom: 30px;                 /* Espaço abaixo dos cards */
+}
+
+/* Estilo individual de cada card de nutricionista */
+.nutricionista-card {
+  width: 120px;                        /* Largura fixa do card */
+  padding: 10px;                       /* Espaçamento interno do card */
+  background-color: #f0f0f0;           /* Cor de fundo cinza claro */
+  border-radius: 8px;                  /* Cantos arredondados */
+  cursor: pointer;                     /* Muda o cursor pra mãozinha ao passar o mouse */
+  transition: 0.3s;                    /* Animação suave nas mudanças */
+  
+}
+
+/* Efeito ao passar o mouse sobre o card */
+.nutricionista-card:hover {
+  background-color: #c8e6c9;           /* Muda a cor de fundo pra verde claro */
+  transform: translateY(-5px);         /* Dá um efeitode "sobe e desce" */
+}
+
+/* Imagem do nutricionista dentro do card */
+.nutricionista-card img {
+  width: 80px;                        /* Largura fixa da imagem */
+  height: 80px;                       /* Altura fixa da imagem */
+  object-fit: cover;                   /* Garante que a imagem não fique esticada */
+  border-radius: 50%;                  /* Faz a imagem virar um círculo */
+  margin-bottom: 7px;                 /* Espaço abaixo da imagem */
+}
+
+/* Estilo do formulário de contato */
+.form-nutri {
+  display: flex;                       /* Flexbox para alinhar os itens em coluna */
+  flex-direction: column;              /* Deixa os elementos do formulário empilhados */
+  gap: 15px;                           /* Espaçamento entre os elementos */
+  text-align: left;                    /* Alinha os textos das labels à esquerda */
+}
+
+/* Campos de texto e área de mensagem */
+.form-nutri input,
+.form-nutri textarea {
+  padding: 25px;                       /* Espaçamento interno */
+  border: 1px solid #ccc;              /* Borda cinza claro */
+  border-radius: 6px;                  /* Bordas arredondadas */
+  width: 100%;                         /* Faz os campos ocuparem toda a largura disponível */
+}
+
+/* Botão de envio */
+.form-nutri button {
+  width: 150px;                        /* Largura fixa do botão */
+  padding: 10px;                       /* Espaçamento interno */
+  background-color: #c8e6c9;           /* Cor de fundo verde claro */
+  border: none;                        /* Remove borda padrão do botão */
+  border-radius: 8px;                  /* Cantos arredondados */
+  cursor: pointer;                     /* Mãozinha ao passar o mouse */
+}
+
+/* Efeito ao passar o mouse no botão */
+.form-nutri button:hover {
+  background-color: #a5d6a7;           /* Verde um pouco mais escuro */
+}
+
+
+.container-nutri > h2 {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+}

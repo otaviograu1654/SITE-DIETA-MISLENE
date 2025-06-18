@@ -1,57 +1,353 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Histórico de dietas - WeekDiet</title>
-  <meta name="description" content="Veja seu histórico de dietas.">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="icon" href="imagens/logo.png" type="image/x-icon">
-  <script src="script.js"></script>
+  <title>Histórico de Dietas - WeekDiet</title>
+ <link rel="stylesheet" href="styles.css">
+ <link rel="icon" href="imagens/logo.png" type="image/x-icon">
+
 </head>
-
 <body>
+
   <header>
-  <div class="logo">
-    <a href="inicial.html">
-      <img src="imagens/logo.png" alt="Logo da WeekDiet" loading="lazy">
-    </a>
-    <h2>WeekDiet</h2>
-  </div>
-
-  <nav>
-    <a href="userdieta.html">Sua Dieta</a>
-    <a href="userhistorico.html">Histórico de dietas</a>
-    <a href="userprogresso.html">Progresso</a>
-    <a href="userpreferencias.html">Preferências</a>
-    <a href="usernutricionista.html">Nutricionistas</a>
-    <a href="userajuda.html">Ajuda</a>
-    <div class="perfil-container">
-      <img src="imagens/perfil.png" alt="Perfil do usuário" class="avatar" onclick="toggleMenu()">
-      <div class="perfil-menu" id="perfilMenu">
-        <strong>Gabriel Tolentino</strong>
-        <small>g-tolentino@hotmail.com</small>
-        <hr>
-        <a href="#">✏️ Dados Pessoais</a>
-        <a href="#">⚙️ Configurações</a>
-        <a href="#">📄 Termos de uso</a>
-        <a href="#">🔒 Segurança</a>
-        <hr>
-        <a href="#">↩️ Sair</a>
-      </div>
+    <div class="logo">
+      <a href="inicial.html">
+        <img src="imagens/logo.png" alt="Logo da WeekDiet" loading="lazy">
+      </a>
+      <h2>WeekDiet</h2>
     </div>
-  </nav>
-</header>
 
-  <main>
+    <nav>
+      <a href="userdieta.html">Sua Dieta</a>
+      <a href="userhistorico.html">Histórico de dietas</a>
+      <a href="userprogresso.html">Progresso</a>
+      <a href="userpreferencias.html">Preferências</a>
+      <a href="usernutricionista.html">Nutricionistas</a>
+      <a href="userajuda.html">Ajuda</a>
+      <div class="perfil-container">
+        <img src="imagens/perfil.png" alt="Perfil do usuário" class="avatar" onclick="toggleMenu()">
+        <div class="perfil-menu" id="perfilMenu">
+          <strong>Gabriel Tolentino</strong>
+          <small>g-tolentino@hotmail.com</small>
+          <hr>
+          <a href="#">✏️ Dados Pessoais</a>
+          <a href="#">⚙️ Configurações</a>
+          <a href="#">📄 Termos de uso</a>
+          <a href="#">🔒 Segurança</a>
+          <hr>
+          <a href="#">↩️ Sair</a>
+        </div>
+      </div>
+    </nav>
+  </header>
 
-  </main>
 
-  <footer>
-    <p>&copy; 2025 WeekDiet. Todos os direitos reservados.</p>
-  </footer>
+  <section class="historico-section">
+    <h1>📜 Histórico de Dietas</h1>
+
+    <div class="historico-lista">
+
+       <details>
+        <summary>📅 Dieta de 03/06/2025 a 09/06/2025</summary>
+        <div class="historico-conteudo">
+
+          <div class="dias-semana">
+            <button class="aba-dia ativo" onclick="abrirDia(event, 'sem1-dia1')">Segunda</button>
+            <button class="aba-dia" onclick="abrirDia(event, 'sem1-dia2')">Terça</button>
+            <button class="aba-dia" onclick="abrirDia(event, 'sem1-dia3')">Quarta</button>
+            <button class="aba-dia" onclick="abrirDia(event, 'sem1-dia4')">Quinta</button>
+            <button class="aba-dia" onclick="abrirDia(event, 'sem1-dia5')">Sexta</button>
+            <button class="aba-dia" onclick="abrirDia(event, 'sem1-dia6')">Sábado</button>
+            <button class="aba-dia" onclick="abrirDia(event, 'sem1-dia7')">Domingo</button>
+          </div>
+
+          <!-- Dias -->
+          <div id="sem1-dia1" class="conteudo-dia ativo">
+            <h3>Segunda-feira</h3>
+            <ul>
+              <li>🍳 Omelete + Suco Natural</li>
+              <li>🍗 Frango + Arroz Integral + Salada</li>
+              <li>🍎 Iogurte Natural + Banana</li>
+              <li>🥗 Sopa de Legumes</li>
+            </ul>
+            <p>Me senti bem, consegui seguir quase tudo.</p>
+          </div>
+
+          <div id="sem1-dia2" class="conteudo-dia">
+            <h3>Terça-feira</h3>
+            <ul>
+              <li>🥑 Tapioca com queijo + Mamão</li>
+              <li>🐟 Filé de peixe + Purê de batata + Salada</li>
+              <li>🥜 Castanhas + Maçã</li>
+              <li>🍳 Omelete + Salada</li>
+            </ul>
+            <p>Tive fome no meio da tarde.</p>
+          </div>
+
+          <div id="sem1-dia3" class="conteudo-dia">
+            <h3>Quarta-feira</h3>
+            <ul>
+              <li>☕ Pão integral + queijo + café</li>
+              <li>🍗 Frango + arroz integral + legumes</li>
+              <li>🍌 Banana + castanhas</li>
+              <li>🥗 Sopa de legumes</li>
+            </ul>
+            <p>Me senti muito bem hoje!</p>
+          </div>
+
+          <div id="sem1-dia4" class="conteudo-dia">
+            <h3>Quinta-feira</h3>
+            <ul>
+              <li>🍞 Pão + queijo + café</li>
+              <li>🥩 Carne + arroz + feijão + legumes</li>
+              <li>🍇 Uva + castanhas</li>
+              <li>🥗 Sopa leve</li>
+            </ul>
+            <p>Dia tranquilo, sem dificuldades.</p>
+          </div>
+
+          <div id="sem1-dia5" class="conteudo-dia">
+            <h3>Sexta-feira</h3>
+            <ul>
+              <li>🥞 Panqueca de aveia + mel</li>
+              <li>🐓 Frango grelhado + arroz + salada</li>
+              <li>🍎 Maçã + iogurte</li>
+              <li>🍳 Omelete + legumes</li>
+            </ul>
+            <p>Me senti bem disposto.</p>
+          </div>
+
+          <div id="sem1-dia6" class="conteudo-dia">
+            <h3>Sábado</h3>
+            <ul>
+              <li>🥐 Pão de queijo + café</li>
+              <li>🥩 Carne grelhada + arroz + feijão</li>
+              <li>🍉 Melancia</li>
+              <li>🥗 Salada completa</li>
+            </ul>
+            <p>Saí um pouco da dieta, mas foi ok.</p>
+          </div>
+
+          <div id="sem1-dia7" class="conteudo-dia">
+            <h3>Domingo</h3>
+            <ul>
+              <li>🥖 Pão francês + queijo + café</li>
+              <li>🍗 Frango assado + arroz + salada</li>
+              <li>🍌 Banana + aveia</li>
+              <li>🍲 Sopa leve</li>
+            </ul>
+            <p>Dia mais relaxado, segui quase tudo.</p>
+          </div>
+
+        </div>
+      </details>
+
+      <!-- 
+
+      Semana 2 
+      
+      -->
+    
+
+<details>
+  <summary>📅 Dieta de 10/06/2025 a 16/06/2025</summary>
+  <div class="historico-conteudo">
+
+    <div class="dias-semana">
+      <button class="aba-dia ativo" onclick="abrirDia(event, 'sem2-dia1')">Segunda</button>
+      <button class="aba-dia" onclick="abrirDia(event, 'sem2-dia2')">Terça</button>
+      <button class="aba-dia" onclick="abrirDia(event, 'sem2-dia3')">Quarta</button>
+      <button class="aba-dia" onclick="abrirDia(event, 'sem2-dia4')">Quinta</button>
+      <button class="aba-dia" onclick="abrirDia(event, 'sem2-dia5')">Sexta</button>
+      <button class="aba-dia" onclick="abrirDia(event, 'sem2-dia6')">Sábado</button>
+      <button class="aba-dia" onclick="abrirDia(event, 'sem2-dia7')">Domingo</button>
+    </div>
+
+    <!-- Dias -->
+    <div id="sem2-dia1" class="conteudo-dia ativo">
+      <h3>Segunda-feira</h3>
+      <ul>
+        <li>🍳 Omelete de espinafre + Suco de laranja</li>
+        <li>🐟 Peixe grelhado + Batata doce + Salada</li>
+        <li>🍎 Maçã + castanhas</li>
+        <li>🥗 Salada completa + frango desfiado</li>
+      </ul>
+      <p>Me senti ótimo, dieta bem tranquila.</p>
+    </div>
+
+    <div id="sem2-dia2" class="conteudo-dia">
+      <h3>Terça-feira</h3>
+      <ul>
+        <li>🥑 Tapioca com queijo + Mamão</li>
+        <li>🍗 Frango + arroz integral + salada</li>
+        <li>🍌 Banana + aveia</li>
+        <li>🍲 Sopa de legumes</li>
+      </ul>
+      <p>Um pouco cansado, mas segui bem.</p>
+    </div>
+
+    <div id="sem2-dia3" class="conteudo-dia">
+      <h3>Quarta-feira</h3>
+      <ul>
+        <li>☕ Pão integral + queijo + café</li>
+        <li>🥩 Carne + feijão + arroz + legumes</li>
+        <li>🍇 Uva + castanhas</li>
+        <li>🍳 Omelete + salada</li>
+      </ul>
+      <p>Dia tranquilo, me senti disposto.</p>
+    </div>
+
+    <div id="sem2-dia4" class="conteudo-dia">
+      <h3>Quinta-feira</h3>
+      <ul>
+        <li>🥞 Panqueca de banana + café</li>
+        <li>🐟 Peixe + purê de batata + legumes</li>
+        <li>🍉 Melancia</li>
+        <li>🥗 Salada com ovos cozidos</li>
+      </ul>
+      <p>Almoço perfeito, janta leve.</p>
+    </div>
+
+    <div id="sem2-dia5" class="conteudo-dia">
+      <h3>Sexta-feira</h3>
+      <ul>
+        <li>🥐 Pão de queijo + café</li>
+        <li>🍗 Frango assado + arroz + feijão</li>
+        <li>🍌 Banana + castanhas</li>
+        <li>🍲 Sopa leve</li>
+      </ul>
+      <p>Dia bem produtivo.</p>
+    </div>
+
+    <div id="sem2-dia6" class="conteudo-dia">
+      <h3>Sábado</h3>
+      <ul>
+        <li>🍞 Pão integral + queijo + café</li>
+        <li>🥩 Carne + arroz + feijão + salada</li>
+        <li>🍎 Maçã + iogurte</li>
+        <li>🥗 Salada + frango grelhado</li>
+      </ul>
+      <p>Saí um pouco da dieta no lanche.</p>
+    </div>
+
+    <div id="sem2-dia7" class="conteudo-dia">
+      <h3>Domingo</h3>
+      <ul>
+        <li>🥖 Pão francês + queijo + café</li>
+        <li>🍗 Frango assado + arroz + legumes</li>
+        <li>🍌 Banana + aveia</li>
+        <li>🍲 Caldo verde</li>
+      </ul>
+      <p>Dia relax, mas mantive a janta leve.</p>
+    </div>
+
+  </div>
+</details>
+
+      <!-- Semana 3 -->
+      
+<details>
+  <summary>📅 Dieta de 17/06/2025 a 23/06/2025</summary>
+  <div class="historico-conteudo">
+
+    <div class="dias-semana">
+      <button class="aba-dia ativo" onclick="abrirDia(event, 'sem3-dia1')">Segunda</button>
+      <button class="aba-dia" onclick="abrirDia(event, 'sem3-dia2')">Terça</button>
+      <button class="aba-dia" onclick="abrirDia(event, 'sem3-dia3')">Quarta</button>
+      <button class="aba-dia" onclick="abrirDia(event, 'sem3-dia4')">Quinta</button>
+      <button class="aba-dia" onclick="abrirDia(event, 'sem3-dia5')">Sexta</button>
+      <button class="aba-dia" onclick="abrirDia(event, 'sem3-dia6')">Sábado</button>
+      <button class="aba-dia" onclick="abrirDia(event, 'sem3-dia7')">Domingo</button>
+    </div>
+
+    <!-- Dias -->
+    <div id="sem3-dia1" class="conteudo-dia ativo">
+      <h3>Segunda-feira</h3>
+      <ul>
+        <li>🍳 Omelete + Suco de laranja</li>
+        <li>🍗 Frango + arroz + legumes</li>
+        <li>🍇 Uva + castanhas</li>
+        <li>🍲 Sopa de legumes</li>
+      </ul>
+      <p>Me senti super bem.</p>
+    </div>
+
+    <div id="sem3-dia2" class="conteudo-dia">
+      <h3>Terça-feira</h3>
+      <ul>
+        <li>🥑 Tapioca + queijo + mamão</li>
+        <li>🐟 Peixe + arroz integral + salada</li>
+        <li>🍌 Banana + aveia</li>
+        <li>🥗 Salada completa + frango</li>
+      </ul>
+      <p>Segui tudo direitinho.</p>
+    </div>
+
+    <div id="sem3-dia3" class="conteudo-dia">
+      <h3>Quarta-feira</h3>
+      <ul>
+        <li>☕ Café + pão integral + queijo</li>
+        <li>🍗 Frango + feijão + arroz + legumes</li>
+        <li>🍎 Maçã + castanhas</li>
+        <li>🍳 Omelete + salada</li>
+      </ul>
+      <p>Dia ótimo, sem deslizes.</p>
+    </div>
+
+    <div id="sem3-dia4" class="conteudo-dia">
+      <h3>Quinta-feira</h3>
+      <ul>
+        <li>🥞 Panqueca de aveia + mel</li>
+        <li>🥩 Carne + arroz + salada</li>
+        <li>🍉 Melancia</li>
+        <li>🥗 Salada + frango grelhado</li>
+      </ul>
+      <p>Me senti bem saciado.</p>
+    </div>
+
+    <div id="sem3-dia5" class="conteudo-dia">
+      <h3>Sexta-feira</h3>
+      <ul>
+        <li>🥐 Pão de queijo + café</li>
+        <li>🐟 Peixe + purê de batata + salada</li>
+        <li>🍇 Uva + castanhas</li>
+        <li>🍲 Caldo verde</li>
+      </ul>
+      <p>Fome controlada durante o dia.</p>
+    </div>
+
+    <div id="sem3-dia6" class="conteudo-dia">
+      <h3>Sábado</h3>
+      <ul>
+        <li>🍞 Pão integral + queijo + café</li>
+        <li>🍗 Frango + arroz + feijão + legumes</li>
+        <li>🍌 Banana + aveia</li>
+        <li>🥗 Salada completa</li>
+      </ul>
+      <p>Saí no almoço, mas compensei na janta.</p>
+    </div>
+
+    <div id="sem3-dia7" class="conteudo-dia">
+      <h3>Domingo</h3>
+      <ul>
+        <li>🥖 Pão francês + queijo + café</li>
+        <li>🍗 Frango assado + arroz + legumes</li>
+        <li>🍉 Melancia</li>
+        <li>🍲 Sopa leve</li>
+      </ul>
+      <p>Dia mais livre, segui 80%.</p>
+    </div>
+
+  </div>
+</details>
+
+
+
+    </div>
+  </section>
+
+  <script src="script.js">  </script>
 
 </body>
-
 </html>
