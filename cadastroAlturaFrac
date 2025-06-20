@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="imagens/principal/logo.png" type="image/x-icon">
+  <script src="script.js"></script>
+  <style>
+    h1 {
+      color: #2e7d32;
+      margin-bottom: 20px;
+    }
+  </style>
+
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <a href="inicial.html">
+        <img src="imagens/principal/logo.png"Logo da WeekDiet" loading="lazy">
+      </a>
+      <h2>WeekDiet</h2>
+    </div>
+    <nav>
+      <a href="funciona.html">Como funciona</a>
+      <a href="feedbacks.html">Feedbacks</a>
+      <a href="sobre.html">Sobre nós</a>
+      <a href="Login.html">Entrar</a>
+    </nav loading="lazy">
+  </header>
+
+  <main style="justify-content: center;">
+
+    <form style="text-align: center;">
+      <div class="step active" id="step-1">
+        <h1>Selecione seu sexo</h1>
+        <div class="options">
+          <div class="option" onclick="nextStep(1, 'Masculino')">
+            <img src="imagens/principal/homem.png" alt="Masculino">
+            <strong>Masculino</strong>
+          </div>
+          <div class="option" onclick="nextStep(1, 'Feminino')">
+            <img src="imagens/principal/mulher.png" alt="Feminino">
+            <strong>Feminino</strong>
+          </div>
+        </div>
+      </div>
+
+      <div class="step" id="step-2">
+        <h1>Selecione seu biotipo</h1>
+        <div class="options">
+          <div class="option" onclick="nextStep(2, 'Ectomorfo')">
+            <img src="imagens/principal/ectomorfo.png" alt="Ectomorfo">
+            <strong>Ectomorfo</strong>
+            <span>Estrutura corporal magra</span>
+          </div>
+          <div class="option" onclick="nextStep(2, 'Mesomorfo')">
+            <img src="imagens/principal/Mesomorfo.png" alt="Mesomorfo">
+            <strong>Mesomorfo</strong>
+            <span>Corpo naturalmente atlético</span>
+          </div>
+          <div class="option" onclick="nextStep(2, 'Endomorfo')">
+            <img src="imagens/principal/endomorfo.png" alt="Endomorfo">
+            <strong>Endomorfo</strong>
+            <span>Maior tendência a acumular gordura</span>
+          </div>
+        </div>
+        <div class="nav-buttons">
+          <button type="button" onclick="prevStep()">◀ Voltar</button>
+        </div>
+      </div>
+
+
+      <div class="step" id="step-3">
+        <h1>Qual seu objetivo?</h1>
+        <div class="options">
+          <div class="option" onclick="nextStep(3, 'Emagrecer')">
+            <img src="imagens/principal/emagrecer.png" alt="Emagrecer">
+            <strong>Emagrecer</strong>
+            <span>Reduzir calorias e queimar gordura</span>
+          </div>
+          <div class="option" onclick="nextStep(3, 'Massa muscular')">
+            <img src="imagens/principal/ganhar.png" alt="Massa">
+            <strong>Ganho de massa muscular</strong>
+            <span>Aumentar calorias e proteínas</span>
+          </div>
+          <div class="option" onclick="nextStep(3, 'Saúde')">
+            <img src="imagens/principal/saudavel.png" alt="Saúde">
+            <strong>Melhorar saúde e manter o peso</strong>
+            <span>Aprimorar o bem-estar geral</span>
+          </div>
+        </div>
+        <div class="nav-buttons">
+          <button type="button" onclick="prevStep()">◀ Voltar</button>
+        </div>
+      </div>
+
+      <div class="step" id="step-4">
+        <h1>Quais carboidratos você consome?</h1>
+        <div class="grid-carbs">
+          <label><input type="checkbox" name="carboidratos" value="arroz">
+            <img src="imagens/carboidratos/arroz.png" alt="Arroz" loading="lazy"> Arroz
+          </label>
+          <label><input type="checkbox" name="carboidratos" value="arroz integral">
+            <img src="imagens/carboidratos/arroz integral.png" alt="Arroz integral" loading="lazy"> Arroz integral
+          </label>
+          <label><input type="checkbox" name="carboidratos" value="feijão">
+            <img src="imagens/carboidratos/feijão.png" alt="Feijão" loading="lazy"> Feijão
+          </label>
+          <label><input type="checkbox" name="carboidratos" value="aveia">
+            <img src="imagens/carboidratos/aveia.png" alt="Aveia" loading="lazy"> Aveia
+          </label>
+          <label><input type="checkbox" name="carboidratos" value="cuscuz">
+            <img src="imagens/carboidratos/cuscuz.png" alt="Cuscuz" loading="lazy"> Cuscuz
+          </label>
+          <label><input type="checkbox" name="carboidratos" value="tapioca">
+            <img src="imagens/carboidratos/tapioca.png" alt="Tapioca" loading="lazy"> Tapioca
+          </label>
+          <label><input type="checkbox" name="carboidratos" value="batata inglesa">
+            <img src="imagens/carboidratos/batata inglesa.png" alt="Batata Inglesa" loading="lazy"> Batata Inglesa
+          </label>
+          <label><input type="checkbox" name="carboidratos" value="macarrao">
+            <img src="imagens/carboidratos/macarrão.png" alt="Macarrão" loading="lazy"> Macarrão
+          </label>
+          <label><input type="checkbox" name="carboidratos" value="polenta">
+            <img src="imagens/carboidratos/polenta.png" alt="Polenta" loading="lazy"> Polenta
+          </label>
+          <label><input type="checkbox" name="carboidratos" value="paes">
+            <img src="imagens/carboidratos/paes.png" alt="Pães" loading="lazy"> Pães
+          </label>
+          <label><input type="checkbox" name="carboidratos" value="Inhame">
+            <img src="imagens/carboidratos/inhame.png" alt="Inhame" loading="lazy"> Inhame
+          </label>
+          <label><input type="checkbox" name="carboidratos" value="batata doce">
+            <img src="imagens/carboidratos/batata doce.png" alt="Batata Doce" loading="lazy"> Batata Doce
+          </label>
+          <label><input type="checkbox" name="carboidratos" value="lentilha">
+            <img src="imagens/carboidratos/lentilha.png" alt="Lentilha" loading="lazy"> Lentilha
+          </label>
+          <label><input type="checkbox" name="carboidratos" value="grao de bico">
+            <img src="imagens/carboidratos/grão de bico.png" alt="Grão-de-bico" loading="lazy"> Grão-de-bico
+          </label>
+          <label><input type="checkbox" name="carboidratos" value=",ilho">
+            <img src="imagens/carboidratos/Milho.png" alt="Milho" loading="lazy"> Milho
+          </label>
+        </div>
+        <div class="buttons">
+          <button type="button" onclick="prevStep()">◀ Voltar</button>
+          <button type="button" class="next-btn" onclick="nextStep(4, getSelectedCarbs())">Continuar ▶</button>
+        </div>
+      </div>
+
+      <div class="step" id="step-5">
+        <h1>Quais proteínas você consome?</h1>
+        <div class="grid-carbs">
+          <label><input type="checkbox" name="proteinas" value="frango">
+            <img src="imagens/proteinas/frango.png" alt="Frango" loading="lazy"> Frango
+          </label>
+          <label><input type="checkbox" name="proteinas" value="carne bovina">
+            <img src="imagens/proteinas/carne  bovina.png" alt="carne bovina" loading="lazy"> carne bovina
+          </label>
+          <label><input type="checkbox" name="proteinas" value="carne suina">
+            <img src="imagens/proteinas/Carne Suina.png" alt="carne suina" loading="lazy"> carne suina
+          </label>
+          <label><input type="checkbox" name="proteinas" value="salmao">
+            <img src="imagens/proteinas/Salmao.png" alt="Salmao" loading="lazy"> Salmao
+          </label>
+          <label><input type="checkbox" name="proteinas" value="atum">
+            <img src="imagens/proteinas/Atum.png" alt="Atum" loading="lazy"> Atum
+          </label>
+          <label><input type="checkbox" name="proteinas" value="sardinha">
+            <img src="imagens/proteinas/Sardinha.png" alt="Sardinha" loading="lazy"> Sardinha
+          </label>
+          <label><input type="checkbox" name="proteinas" value="ovo">
+            <img src="imagens/proteinas/Ovo.png" alt="Ovo" loading="lazy"> Ovo
+          </label>
+          <label><input type="checkbox" name="proteinas" value="queijo">
+            <img src="imagens/proteinas/Queijo.png" alt="Queijo" loading="lazy"> Queijo
+          </label>
+          <label><input type="checkbox" name="proteinas" value="iogurte">
+            <img src="imagens/proteinas/Iogurte.png" alt="Iogurte" loading="lazy"> Iogurte
+          </label>
+          <label><input type="checkbox" name="proteinas" value="leite">
+            <img src="imagens/proteinas/Leite.png" alt="Leite" loading="lazy"> Leite
+          </label>
+          <br>
+          <label><input type="checkbox" name="proteinas" value="tofu">
+            <img src="imagens/proteinas/Tofu.png" alt="Tofu" loading="lazy"> Tofu
+          </label>
+          <label><input type="checkbox" name="proteinas" value="whey protein">
+            <img src="imagens/proteinas/whey protein.png" alt="whey protein" loading="lazy"> Whey Protein
+          </label>
+          <label><input type="checkbox" name="proteinas" value="caseina">
+            <img src="imagens/proteinas/Caseina.png" alt="Caseina" loading="lazy"> Caseina
+          </label>
+        </div>
+        <div class="buttons">
+          <button type="button" onclick="prevStep()">◀ Voltar</button>
+          <button type="button" class="next-btn" onclick="nextStep(5, getSelectedProteins())">Continuar ▶</button>
+        </div>
+      </div>
+
+      <div class="step" id="step-6">
+        <h1>Quais frutas você consome?</h1>
+        <div class="grid-carbs">
+          <label><input type="checkbox" name="frutas" value="banana">
+            <img src="imagens/frutas/Banana.png" alt="Banana" loading="lazy"> Banana
+          </label>
+          <label><input type="checkbox" name="frutas" value="maça">
+            <img src="imagens/frutas/Maça.png" alt="Maça" loading="lazy"> Maça
+          </label>
+          <label><input type="checkbox" name="frutas" value="pera">
+            <img src="imagens/frutas/Pera.png" alt="Pera" loading="lazy"> Pera
+          </label>
+          <label><input type="checkbox" name="frutas" value="laranja">
+            <img src="imagens/frutas/Laranja.png" alt="Laranja" loading="lazy"> Laranja
+          </label>
+          <label><input type="checkbox" name="frutas" value="manga">
+            <img src="imagens/frutas/Manga.png" alt="Manga" loading="lazy"> Manga
+          </label>
+          <label><input type="checkbox" name="frutas" value="abacaxi">
+            <img src="imagens/frutas/Abacaxi.png" alt="Abacaxi" loading="lazy"> Abacaxi
+          </label>
+          <label><input type="checkbox" name="frutas" value="mamao">
+            <img src="imagens/frutas/Mamão.png" alt="Mamão" loading="lazy"> Mamão
+          </label>
+          <label><input type="checkbox" name="frutas" value="abacate">
+            <img src="imagens/frutas/Abacate.png" alt="Abacate" loading="lazy"> Abacate
+          </label>
+          <label><input type="checkbox" name="frutas" value="morango">
+            <img src="imagens/frutas/Morango.png" alt="Morango" loading="lazy"> Morango
+          </label>
+          <label><input type="checkbox" name="frutas" value="acerola">
+            <img src="imagens/frutas/Acerola.png" alt="Acerola" loading="lazy"> Acerola
+          </label>
+          <label><input type="checkbox" name="frutas" value="figo">
+            <img src="imagens/frutas/Figo.png" alt="Figo" loading="lazy"> Figo
+          </label>
+          <label><input type="checkbox" name="frutas" value="ameixa">
+            <img src="imagens/frutas/Ameixa.png" alt="Ameixa" loading="lazy"> Ameixa
+          </label>
+          <label><input type="checkbox" name="frutas" value="main">
+            <img src="imagens/frutas/Melancia.png" alt="Melancia" loading="lazy"> Melancia
+          </label>
+          <label><input type="checkbox" name="frutas" value="tangerina">
+            <img src="imagens/frutas/Tangerina.png" alt="Tangerina" loading="lazy"> Tangerina
+          </label>
+          <label><input type="checkbox" name="frutas" value="melão">
+            <img src="imagens/frutas/Melão.png" alt="Melão" loading="lazy"> Melão
+          </label>
+        </div>
+        <div class="buttons">
+          <button type="button" onclick="prevStep()">◀ Voltar</button>
+          <button type="button" class="next-btn" onclick="nextStep(6, getSelectedFrutas())">Continuar ▶</button>
+        </div>
+      </div>
+
+      <div class="step" id="step-7">
+        <h1>Quais legumes e verduras você consome?</h1>
+        <div class="grid-carbs">
+          <label><input type="checkbox" name="legumes" value="cenoura">
+            <img src="imagens/legumes/Cenoura.png" alt="Cenoura" loading="lazy"> Cenoura
+          </label>
+          <label><input type="checkbox" name="legumes" value="beterraba">
+            <img src="imagens/legumes/Beterraba.png" alt="Beterraba" loading="lazy"> Beterraba
+          </label>
+          <label><input type="checkbox" name="legumes" value="brócolis">
+            <img src="imagens/legumes/Brocolis.png" alt="Brócolis" loading="lazy"> Brócolis
+          </label>
+          <label><input type="checkbox" name="legumes" value="abobrinha">
+            <img src="imagens/legumes/Abobrinha.png" alt="Abobrinha" loading="lazy"> Abobrinha
+          </label>
+          <label><input type="checkbox" name="legumes" value="berinjela">
+            <img src="imagens/legumes/Berinjela.png" alt="Berinjela" loading="lazy"> Berinjela
+          </label>
+          <label><input type="checkbox" name="legumes" value="espinafre">
+            <img src="imagens/legumes/Espinafre.png" alt="Espinafre" loading="lazy"> Espinafre
+          </label>
+          <label><input type="checkbox" name="legumes" value="repolho">
+            <img src="imagens/legumes/Repolho.png" alt="Repolho" loading="lazy"> Repolho
+          </label>
+          <label><input type="checkbox" name="legumes" value="couve">
+            <img src="imagens/legumes/Couve.png" alt="Couve" loading="lazy"> Couve
+          </label>
+          <label><input type="checkbox" name="legumes" value="couve-flor">
+            <img src="imagens/legumes/Couve-flor.png" alt="Couve-flor" loading="lazy"> Couve-flor
+          </label>
+          <label><input type="checkbox" name="legumes" value="vagem">
+            <img src="imagens/legumes/Vagem.png" alt="Vagem" loading="lazy"> Vagem
+          </label>
+          <label><input type="checkbox" name="legumes" value="chuchu">
+            <img src="imagens/legumes/Chuchu.png" alt="Chuchu" loading="lazy"> Chuchu
+          </label>
+          <label><input type="checkbox" name="legumes" value="alface">
+            <img src="imagens/legumes/Alface.png" alt="Alface" loading="lazy"> Alface
+          </label>
+          <label><input type="checkbox" name="legumes" value="tomate">
+            <img src="imagens/legumes/Tomate.png" alt="Tomate" loading="lazy"> Tomate
+          </label>
+          <label><input type="checkbox" name="legumes" value="pepino">
+            <img src="imagens/legumes/Pepino.png" alt="Pepino" loading="lazy"> Pepino
+          </label>
+          <label><input type="checkbox" name="legumes" value="acelga">
+            <img src="imagens/legumes/Acelga.png" alt="Acelga" loading="lazy"> Acelga
+          </label>
+        </div>
+
+
+
+        <div class="buttons">
+          <button type="button" onclick="prevStep()">◀ Voltar</button>
+          <button type="button" class="next-btn" onclick="nextStep(7, getSelectedLegumes())">Continuar ▶</button>
+        </div>
+      </div>
+
+
+      <div class="step" id="step-8">
+        <h1>Sobre atividades físicas:</h1>
+
+        <p>Com que frequência você pratica atividades físicas?</p>
+        <div class="radio-group">
+          <label><input type="radio" name="frequencia" value="1x"> 1 vez na semana</label>
+          <label><input type="radio" name="frequencia" value="3x"> 3 vezes na semana</label>
+          <label><input type="radio" name="frequencia" value="5x"> 5 vezes na semana</label>
+          <label><input type="radio" name="frequencia" value="todo dia"> Todos os dias</label>
+          <label><input type="radio" name="frequencia" value="nao"> Não pratico</label>
+        </div>
+
+        <div id="detalhes-atividade" style="display: none;">
+
+          <p>Em quais horários você faz exercícios?</p>
+          <div class="radio-group">
+            <label><input type="radio" name="horario" value="manha"> Manhã</label>
+            <label><input type="radio" name="horario" value="tarde"> Tarde</label>
+            <label><input type="radio" name="horario" value="noite"> Noite</label>
+          </div>
+
+          <p>Qual é a intensidade das atividades?</p>
+          <div class="radio-group">
+            <label><input type="radio" name="intensidade" value="leve"> Leve</label>
+            <label><input type="radio" name="intensidade" value="moderado"> Moderado</label>
+            <label><input type="radio" name="intensidade" value="intenso"> Intenso</label>
+          </div>
+        </div>
+
+
+        <div class="buttons">
+          <button type="button" onclick="prevStep()">◀ Voltar</button>
+          <button type="button" class="next-btn" onclick="nextStep(8, getAtividadeFisica())">Continuar ▶</button>
+        </div>
+      </div>
+
+      <div class="step" id="step-9">
+        <h1>Possui alguma condição específica?</h1>
+
+        <div class="condicao-group">
+          <label><input type="checkbox" name="condicoes" value="anemia"> Anemia</label>
+          <label><input type="checkbox" name="condicoes" value="diabetes"> Diabetes</label>
+          <label><input type="checkbox" name="condicoes" value="gravidez"> Gravidez</label>
+          <label><input type="checkbox" name="condicoes" value="gastrite"> Gastrite</label>
+          <label><input type="checkbox" name="condicoes" value="hipertensao"> Hipertensão</label>
+          <label><input type="checkbox" name="condicoes" value="pre-diabetes"> Pré-diabetes</label>
+          <label><input type="checkbox" name="condicoes" value="colesterol"> Colesterol alto</label>
+          <label><input type="checkbox" name="condicoes" value="gluten"> Intolerância à glúten</label>
+          <label><input type="checkbox" name="condicoes" value="frutose"> Intolerância à frutose</label>
+          <label><input type="checkbox" name="condicoes" value="lactose"> Intolerância à lactose</label>
+          <label><input type="checkbox" name="condicoes" value="não possui"> Não possui nenhuma condição</label>
+        </div>
+
+
+        <div class="buttons">
+          <button type="button" onclick="prevStep()">◀ Voltar</button>
+          <button type="button" class="next-btn" onclick="nextStep(9, getSelectedCondicoes())">Continuar ▶</button>
+        </div>
+      </div>
+      <div class="step" id="step-10">
+        <h1>Dados pessoais</h1>
+        <div class="dados-pessoais">
+          <label>Nome:
+            <input type="text" name="nome" placeholder="Digite seu nome" required>
+          </label>
+          <label>Data de nascimento:
+            <input type="date" name="nascimento" placeholder="xx/xx/xxxx" required>
+          </label>
+          <label>Peso:
+  <input type="number" name="peso" placeholder="Peso em kg" step="0.01" required>
+</label>
+
+<label>Altura:
+  <input type="number" name="altura" placeholder="Altura em metros (ex: 1.52)" step="0.01" required>
+</label>
+          <label>Telefone:
+            <input type="tel" name="telefone" placeholder="(xx) xxxxx-xxxx" required>
+          </label>
+          <label>Email:
+            <input type="email" name="email" placeholder="Digite seu email" required>
+          </label>
+          <label>Senha:
+            <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
+          </label>
+          <label>Confirme sua senha:
+            <input type="password" id="confirmaSenha" name="confirmaSenha" placeholder="Confirme sua senha" required>
+          </label>
+        </div>
+
+        <div class="buttons">
+          <button type="button" onclick="prevStep()">◀ Voltar</button>
+          <button type="submit" class="next-btn">Concluir Cadastro</button>
+        </div>
+
+    </form>
+
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 WeekDiet. Todos os direitos reservados.</p>
+  </footer>
+
+</body>
+
+</html>
